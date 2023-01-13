@@ -1,0 +1,50 @@
+.checkbox {
+
+  &__label {
+    position: relative;
+    display: block;
+    padding-left: 35px;
+    cursor: pointer;
+  }
+
+  &__label:last-child {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input + &__pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition:  background-color .3s ease-in-out;
+    background-color: rgba(130, 162, 185, 0.5);
+  }
+
+  &__input + &__pane::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 11px;
+    height: 9px;
+    background-image: url(../img/svg/agree-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity .3s ease-in-out;
+  }
+
+  &__input:checked + .checkbox__pane {
+    background-color: #e24230;
+  }
+
+
+}

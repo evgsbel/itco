@@ -1,0 +1,44 @@
+.header {
+  position: absolute;
+  z-index: 50;
+  margin: 0 auto;
+  width: 100%;
+  &__row {
+    align-items: center;
+  }
+  &__contacts {
+    display: flex;
+    margin-left: 20px;
+  }
+  &__tlg {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #E24230;
+    position: relative;
+    flex: 0 0 auto;
+    svg {
+      position: absolute;
+      left: 6%;
+      top: 25%;
+      width: 28px;
+      height: 27px;
+    }
+  }
+  &__phone {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 41px;
+    color: #fff;
+    flex: 0 0 auto;
+  }
+}
+
+.logo {
+  svg {
+    width: 150px;
+  }
+}
