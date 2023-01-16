@@ -4,6 +4,9 @@
   padding: 187px 0;
   background-image: url('../img/hero-bg.png');
   background-size: cover;
+  @include r(1024) {
+    padding-bottom: 50px;
+  }
 
   &__row {
     align-items: flex-end;
@@ -48,6 +51,9 @@
     margin: 0 auto;
     width: 38px;
     height: 60px;
+    @include r(1024) {
+      display: none;
+    }
   }
 }
 
@@ -59,6 +65,9 @@
   -moz-border-radius: 15px;
   border-radius: 15px;
   text-align: center;
+  @include r(1024) {
+    margin-top: 20px;
+  }
 
   &__heading {
     margin-bottom: 32px;
@@ -88,6 +97,10 @@
     width: 370px;
     max-width: 95%;
     height: 50px;
+    @include r(1200) {
+      max-width: 80%;
+      margin: 6px auto;
+    }
 
     &::placeholder {
       text-align: center;
@@ -101,6 +114,11 @@
       outline: none;
       border: 1px solid #e24230;
     }
+
+  }
+
+  &__label {
+    display: block;
   }
 
   &__conf {
@@ -132,11 +150,13 @@
     height: 50px;
     margin-bottom: 35px;
     transition: .3s background-color ease-in-out;
+
     &:disabled {
       background-color: rgba(130, 162, 185, 0.5);
       cursor: text;
     }
   }
+
   &__caption {
     margin-bottom: 20px;
     font-size: 20px;
@@ -153,11 +173,17 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 110px 94px;
+    @include r(576) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     flex: 0 0 18%;
     text-align: center;
+    @include r(576) {
+      flex-basis: 100%;
+    }
   }
 
   img {
@@ -180,6 +206,7 @@
 
   &__item {
     text-align: center;
+    height: 260px;
 
     &.is-active {
       padding: 20px;
@@ -201,6 +228,16 @@
     }
   }
 
+  &__img {
+    @include r(1366) {
+      object-fit: contain;
+    }
+    @include r(1024) {
+      object-fit: none;
+    }
+
+  }
+
   &__caption {
     margin-bottom: 10px;
     font-weight: 700;
@@ -217,6 +254,9 @@
     border-bottom-right-radius: 12px;
     background: linear-gradient(90deg, #F8FAFB 0%, #E9EFF4 48.44%, #F8FAFB 100%);
     backdrop-filter: blur(10px);
+    @include r(1024) {
+      flex-direction: column;
+    }
 
     p, li {
       font-size: 15px;
@@ -251,6 +291,11 @@
 
   &__flex {
     align-items: center;
+    @include r(1280) {
+      flex-wrap: wrap;
+      gap: 20px 0;
+      justify-content: center;
+    }
   }
 
   &__icon {
@@ -261,6 +306,9 @@
 
   &__heading {
     margin-right: 35px;
+    @include r(576) {
+      margin-right: 0;
+    }
   }
 
   &__caption {
@@ -283,6 +331,10 @@
 
   &__form {
     align-items: center;
+    @include r(600) {
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 
   &__input {
@@ -298,7 +350,9 @@
     max-width: 100%;
     height: 51px;
     text-align: center;
-
+    @include r(600) {
+      margin-right: 0;
+    }
     &::placeholder {
       font-weight: 600;
       font-size: 20px;
@@ -317,7 +371,9 @@
     color: #fff;
     font-size: 14px;
     line-height: 17px;
-
+    @include r(600) {
+      margin-right: 0;
+    }
     a {
       text-decoration: underline;
     }
@@ -359,7 +415,9 @@
     text-transform: uppercase;
     color: #212E33;
     transition: .3s background-color ease-in-out;
-
+    @include r(600) {
+      margin: 0 auto;
+    }
     &:disabled {
       background-color: rgba(255, 255, 255, 0.5);
       cursor: text;
@@ -378,19 +436,22 @@
   }
 
   &__list {
-    display: flex;
-    gap: 50px;
+
   }
 
   &__item {
     position: relative;
-    flex: 0 0 31%;
+    //flex: 0 0 31%;
     padding: 30px 45px;
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     color: #fff;
     min-height: 420px;
+    box-sizing: border-box;
+    @include r(1024) {
+
+    }
   }
 
   &__caption {
@@ -418,12 +479,19 @@
     color: #fff;
     background: #e24230;
     border-radius: 50px;
+    @include r(1024) {
+      position: static;
+      display: block;
+      margin: 15px auto 0;
+    }
   }
 }
 
 /* steps */
 .steps {
   background-image: url('../img/steps-bg.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
 
   &__title {
     color: #fff;
@@ -447,6 +515,12 @@
     color: #fff;
     text-align: center;
     flex: 0 0 24%;
+    @include r(576) {
+      flex-basis: 48%;
+    }
+    @include r(375) {
+      flex-basis: 100%;
+    }
   }
 
   &__caption {
@@ -471,15 +545,12 @@
 /* projects */
 .projects {
   &__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 80px;
+    position: relative;
   }
 
   &__item {
     position: relative;
-    flex: 0 0 33%;
-    min-height: 630px;
+    margin-bottom: 80px;
   }
 
   &__logo {
@@ -530,22 +601,31 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 0 280px;
+    @include r(1366) {
+      gap: 0 220px;
+    }
+    @include r(1024) {
+      gap: 80px;
+    }
   }
 
   &__item {
 
   }
-&__top {
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-}
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+
   &__caption {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     color: #909BAD;
   }
+
   &__value {
     font-weight: 900;
     font-size: 70px;
@@ -556,6 +636,7 @@
     background-clip: text;
     text-fill-color: transparent;
   }
+
   &__bottom {
     font-weight: 300;
     font-size: 22px;
@@ -568,27 +649,35 @@
 
 /* honors */
 .honors {
- &__list {
-   display: flex;
-   gap: 0 50px;
- }
+  &__list {
+
+  }
+
   &__item {
-    flex: 0 0 48%;
     display: flex;
     justify-content: space-around;
+    @include r(576) {
+      flex-direction: column;
+    }
   }
+
   &__heading {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0 25px;
+    @include r(576) {
+      justify-content: flex-end;
+    }
   }
+
   &__caption {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     color: #909BAD;
   }
+
   &__year {
     font-weight: 900;
     font-size: 70px;
@@ -599,6 +688,7 @@
     background-clip: text;
     text-fill-color: transparent;
   }
+
   &__span {
     font-weight: 300;
     font-size: 22px;
@@ -619,39 +709,53 @@
   &__title {
     color: #fff;
   }
+
   &__list {
     display: flex;
     gap: 0 50px;
+    @include r(768) {
+      flex-direction: column;
+      gap: 30px 0;
+    }
   }
+
   &__item {
-    flex: 0 0 32%;
+    flex: 0 0 31%;
     padding: 20px 45px 45px 40px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     color: #fff;
+    @include r(1366) {
+      flex: 1 1 31%;
+    }
   }
+
   &__heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
+
     p {
       text-align: right;
     }
   }
+
   &__name {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
   }
+
   &__profession {
     font-weight: 700;
     font-size: 14px;
     line-height: 1;
     text-transform: uppercase;
   }
+
   &__experience {
     font-weight: 900;
     font-size: 12px;
@@ -665,24 +769,35 @@
     color: #fff;
     text-align: left;
   }
+
   &__checkbox {
     color: #fff;
+
     .checkbox__pane {
       background-color: transparent;
     }
   }
+
   &__submit {
     background-color: #fff;
     color: #212E33;
   }
+
   &__form {
     background: none;
     backdrop-filter: none;
     padding: 0;
+
+
     input {
       background-color: transparent;
     }
+
+    @include r(1024) {
+      margin-top: 20px;
+    }
   }
+
   &__heading {
     margin-bottom: 0;
     padding-top: 26px;
@@ -694,6 +809,7 @@
     line-height: 1;
     text-transform: uppercase;
   }
+
   &__body {
     padding-top: 20px;
     border: 1px solid #B4BFC9;
@@ -702,6 +818,7 @@
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
   }
+
   &__info {
     padding: 20px;
     color: #fff;
@@ -711,6 +828,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid #fff;
     border-radius: 20px;
+
     span {
       font-size: 22px;
       font-weight: 700;

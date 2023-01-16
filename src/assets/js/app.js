@@ -7,22 +7,7 @@ $('[data-fancybox=""]').fancybox({
   // Options will go here
 });
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 20,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: swiper,
-  },
-});
+
 
 
 /* dusabled submit */
@@ -51,4 +36,128 @@ $(".js-about-checkbox").on('change', function(){
   else {
     $(".js-about-submit").prop('disabled',true);
   }
+});
+
+/* mobile menu */
+// mobile menu
+$(() => {
+  const btnMenu = document.querySelector('.burger');
+  const menu = document.querySelector('.hide-menu');
+  const body = document.querySelector('.overflow');
+  // let heroHeight = document.querySelector('.hero').clientHeight
+  // let headerHeight = document.querySelector('.header').clientHeight
+
+  const toggleMenu = function () {
+    menu.classList.toggle('is-open');
+    // menu.style.height = heroHeight + headerHeight + 'px'
+    btnMenu.classList.toggle('is-active');
+    body.classList.toggle('opened-menu');
+  };
+
+  btnMenu.addEventListener('click', function (e) {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  const closeBtn = document.querySelector('.close');
+  const closeMenu = function () {
+    menu.classList.remove('is-open');
+    body.classList.remove('opened-menu');
+    btnMenu.classList.remove('is-active');
+  };
+
+  closeBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    closeMenu();
+  });
+});
+
+/* direction slider */
+var swiperDirection = new Swiper(".direction-slider", {
+  loop: true,
+  navigation: {
+    nextEl: ".direction__nav-next",
+    prevEl: ".direction__nav-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+});
+/* projects slider */
+var swiperProject = new Swiper(".projects-slider", {
+  loop: true,
+  navigation: {
+    nextEl: ".projects__nav-next",
+    prevEl: ".projects__nav-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 80,
+    },
+  },
+});
+/* service slider */
+var swiperService = new Swiper(".service-slider", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  loop: true,
+  navigation: {
+    nextEl: ".service__nav-next",
+    prevEl: ".service__nav-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    601: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+/* honor slider */
+var swiperhonors = new Swiper(".honors-slider", {
+  slidesPerView: 2,
+  spaceBetween: 50,
+  loop: true,
+  navigation: {
+    nextEl: ".honors__nav-next",
+    prevEl: ".honors__nav-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    769: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+  },
 });

@@ -23,7 +23,7 @@ script: main
           <li class="hero__list-item">Обучение работе в системе и поддержка 24/7</li>
         </ul>
       </div>
-      <div class="offset-lg-1 col-lg-4">
+      <div class="offset-xl-1 col-xl-4 col-lg-5">
         <form action="" class="hero__form hero-form">
           <div class="hero-form__heading">Записаться на демонстрацию продукта</div>
           <label for="hero-phone" class="hero-form__label"></label>
@@ -97,10 +97,10 @@ script: main
 
 <section class="direction">
   <div class="container">
-    <div class="row">
+    <div class="row position-relative">
       <div class="col-12">
         <h2 class="title-h2">Основные направления применения</h2>
-        <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper direction-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="direction__item is-active">
@@ -128,46 +128,16 @@ script: main
             </div>
           </div>
         </div>
-        <!--        <div-->
-        <!--          style="&#45;&#45;swiper-navigation-color: #fff; &#45;&#45;swiper-pagination-color: #fff"-->
-        <!--          class="swiper mySwiper2"-->
-        <!--        >-->
-        <!--          <div class="swiper-wrapper">-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-1.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-2.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-3.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-4.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-5.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-6.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-7.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-8.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-9.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="swiper-slide">-->
-        <!--              <img src="https://swiperjs.com/demos/images/nature-10.jpg"/>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--          <div class="swiper-button-next"></div>-->
-        <!--          <div class="swiper-button-prev"></div>-->
-        <!--        </div>-->
-
+      </div>
+      <div class="slider-navigation slider-navigation_left direction__nav direction__nav-next">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+        </svg>
+      </div>
+      <div class="slider-navigation slider-navigation_right direction__nav direction__nav-prev">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+        </svg>
       </div>
     </div>
     <div class="row">
@@ -251,24 +221,24 @@ script: main
         <h2 class="title-h2 service__title">Услуги</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-10 offset-lg-1">
-        <ul class="service__list">
-          <li class="service__item">
+    <div class="row position-relative">
+      <div class="col-lg-10 offset-lg-1 swiper service-slider">
+        <ul class="service__list swiper-wrapper">
+          <li class="service__item swiper-slide">
             <p class="service__caption">Поставка и внедрение
               комплексных PACS+RIS систем</p>
             <p class="service__description">Интеграция клинических приложений с PACS/VBC и прочими системами. Сервисное
               обслуживание</p>
             <button class="btn-reset service__btn">Подробности</button>
           </li>
-          <li class="service__item">
+          <li class="service__item swiper-slide">
             <p class="service__caption">Поставка медицинских систем визуализации</p>
             <p class="service__description">В том числе помощь в подборе
               подходящей продукции и введение
               в эксплуатацию</p>
             <button class="btn-reset service__btn">Подробности</button>
           </li>
-          <li class="service__item">
+          <li class="service__item swiper-slide">
             <p class="service__caption">Интегрированные гибридные операционные</p>
             <p class="service__description">Отображение видео со всех
               источников в операционной,
@@ -277,6 +247,16 @@ script: main
             <button class="btn-reset service__btn">Подробности</button>
           </li>
         </ul>
+      </div>
+      <div class="slider-navigation slider-navigation_left service__nav service__nav-next">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+        </svg>
+      </div>
+      <div class="slider-navigation slider-navigation_right service__nav service__nav-prev">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+        </svg>
       </div>
     </div>
   </div>
@@ -358,16 +338,16 @@ script: main
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-10 offset-lg-1">
-        <ul class="projects__list">
-          <li class="projects__item"><img src="assets/img/pr-01.png" alt="" class="projects__logo">
+      <div class="col-lg-10 offset-lg-1 projects-slider swiper">
+        <ul class="projects__list swiper-wrapper">
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-01.png" alt="" class="projects__logo">
             <p class="projects__caption">SaaS для частных медцентров</p>
             <div class="projects__description"><p>Медскан – сеть диагностических центров (4 центра) экспертного класса и
               онкологический центр</p>
             </div>
             <button class="btn-reset projects__btn">Подробности</button>
           </li>
-          <li class="projects__item"><img src="assets/img/pr-02.png" alt="" class="projects__logo">
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-02.png" alt="" class="projects__logo">
             <p class="projects__caption">Поддержка и расширение имеющихся систем</p>
             <div class="projects__description">
               <p>Поставка программно - аппаратного комплекса для получения, обработки, архивирования
@@ -376,7 +356,7 @@ script: main
             </div>
             <button class="btn-reset projects__btn">Подробности</button>
           </li>
-          <li class="projects__item"><img src="assets/img/pr-03.png" alt="" class="projects__logo">
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-03.png" alt="" class="projects__logo">
             <p class="projects__caption">Телерадиология и распределенный рабочий процесс</p>
             <div class="projects__description"><p>Компания «ИНВИТРО» была основана в Москве в ноябре 1998. ИНВИТРО -
               крупнейшая частная медицинская компания в России, специализирующаяся на высокоточной лабораторной
@@ -387,6 +367,16 @@ script: main
             <button class="btn-reset projects__btn">Подробности</button>
           </li>
         </ul>
+        <div class="slider-navigation slider-navigation_left projects__nav projects__nav-next">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+          </svg>
+        </div>
+        <div class="slider-navigation slider-navigation_right projects__nav projects__nav-prev">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -459,10 +449,10 @@ script: main
         <h2 class="title-h2">Наши награды</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <ul class="honors__list">
-          <li class="honors__item">
+    <div class="row position-relative">
+      <div class="col-12 swiper honors-slider">
+        <ul class="honors__list swiper-wrapper">
+          <li class="honors__item swiper-slide">
             <div>
               <div class="honors__heading">
                 <p class="honors__caption">Лучшая <br>система</p>
@@ -472,7 +462,7 @@ script: main
             </div>
             <img src="assets/img/honnor-img.png" alt="" class="honors__img">
           </li>
-          <li class="honors__item">
+          <li class="honors__item swiper-slide">
             <div>
               <div class="honors__heading">
                 <p class="honors__caption">Лучшая <br>система</p>
@@ -482,9 +472,30 @@ script: main
             </div>
             <img src="assets/img/honnor-img.png" alt="" class="honors__img">
           </li>
+          <li class="honors__item swiper-slide">
+            <div>
+              <div class="honors__heading">
+                <p class="honors__caption">Лучшая <br>система</p>
+                <p class="honors__year">2022</p>
+              </div>
+              <p class="honors__span">года</p>
+            </div>
+            <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+          </li>
         </ul>
       </div>
+      <div class="slider-navigation slider-navigation_left honors__nav honors__nav-next">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+        </svg>
+      </div>
+      <div class="slider-navigation slider-navigation_right honors__nav honors__nav-prev">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+        </svg>
+      </div>
     </div>
+
   </div>
 </section>
 
@@ -499,7 +510,7 @@ script: main
         </div>
       </div>
       <div class="row">
-        <div class="col--lg-10 offset-lg-1">
+        <div class="col--lg-10 offset-xl-1">
           <ul class="reviews__list">
             <li class="reviews__item">
               <div class="reviews__heading"><img src="assets/img/rev-01.png" alt="" class="reviews__photo">
@@ -569,7 +580,7 @@ script: main
             и беспрепятственный обмен информацией при обслуживании пациентов.
           </div>
         </div>
-        <div class="col-lg-4 offset-lg-2">
+        <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
           <form action="" class="hero__form hero-form about__form">
             <div class="hero-form__heading about__heading">Остались вопросы?</div>
             <div class="about__body">
@@ -598,3 +609,4 @@ script: main
     </div>
   </section>
 </div>
+

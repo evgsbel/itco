@@ -28,9 +28,9 @@ body {
 
 .container {
   padding: 0 15px;
-//  @include r(768) {
-//    padding: 0 32px;
-//  }
+  @include r(1366) {
+    padding: 0 30px;
+  }
 //  @include r(480) {
 //    padding: 0 12px;
 //  }
@@ -98,6 +98,41 @@ section {
   padding: 72px 0 100px;
 }
 
+.overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/overflow.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: .3s opacity ease-in-out;
+  &.opened-menu {
+    opacity: 1;
+    z-index: 50;
+  }
+}
+
+.slider-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  svg {
+    width: 14px;
+    height: 24px;
+  }
+  &_left {
+    left: 0;
+  }
+  &_right {
+    right: 0;
+  }
+}
 
 
 
