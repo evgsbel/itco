@@ -84,6 +84,14 @@
       </div>
     </header>
     <main role="main" class="main">
+        
+        <button  class="btn-reset callback-btn" >
+          Оставить заявку
+          <span class="callback-btn__rings"></span>
+          <span class="callback-btn__rings"></span>
+          <span class="callback-btn__rings"></span>
+          <span class="callback-btn__rings"></span>
+        </button>
         <!--Hero-->
         <section class="hero">
           <div class="container">
@@ -238,25 +246,25 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="direction__item tabs__btn tabs__btn tabs__btn_active is-active" data-path="one">
-                        <img src="assets/img/dir-01.jpg"/>
+                        <div class="direction__img-wrp"><img src="assets/img/dir-01.jpg"/></div>
                         <p class="direction__caption">Рентгенология</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="direction__item tabs__btn" data-path="two">
-                        <img src="assets/img/dir-02.jpg"/>
+                       <div class="direction__img-wrp"> <img src="assets/img/dir-02.jpg"/></div>
                         <p class="direction__caption">Кардиология</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="direction__item tabs__btn" data-path="three">
-                        <img src="assets/img/dir-03.jpg"/>
+                        <div class="direction__img-wrp"><img src="assets/img/dir-03.jpg"/></div>
                         <p class="direction__caption">Онкология</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="direction__item tabs__btn" data-path="four">
-                        <img src="assets/img/dir-04.jpg"/>
+                        <div class="direction__img-wrp"> <img src="assets/img/dir-04.jpg"/></div>
                         <p class="direction__caption">Радиоизотопная диагностика</p>
                       </div>
                     </div>
@@ -673,6 +681,26 @@
                     </div>
                     <img src="assets/img/honnor-img.png" alt="" class="honors__img">
                   </li>
+                  <li class="honors__item swiper-slide">
+                    <div>
+                      <div class="honors__heading">
+                        <p class="honors__caption">Лучшая <br>система</p>
+                        <p class="honors__year">2022</p>
+                      </div>
+                      <p class="honors__span">года</p>
+                    </div>
+                    <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+                  </li>
+                  <li class="honors__item swiper-slide">
+                    <div>
+                      <div class="honors__heading">
+                        <p class="honors__caption">Лучшая <br>система</p>
+                        <p class="honors__year">2022</p>
+                      </div>
+                      <p class="honors__span">года</p>
+                    </div>
+                    <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+                  </li>
                 </ul>
               </div>
               <div class="slider-navigation slider-navigation_left honors__nav honors__nav-next">
@@ -847,6 +875,23 @@
         </div>
       </div>
     </footer>
+    <div class="popup" id="popup" style="display: none">
+      <form action="" class="hero__form hero-form">
+        <div class="hero-form__heading">Записаться на демонстрацию продукта</div>
+        <label for="hero-phone" class="hero-form__label"></label>
+        <input type="tel" id="hero-phone" name="hero-phone" class="hero-form__input phone-mask"
+               placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+        <div class="hero-form__conf checkbox flex">
+          <label for="conf" class="checkbox__label">
+            <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
+            <span class="checkbox__pane"></span>
+            Я согласен(а) на <a href="/">обработку персональных данных</a>
+          </label>
+        </div>
+        <p class="hero-form__present">В подарок: презентация о системе AP/IX</p>
+        <button class="btn-reset hero-form__submit js-hero-submit">Записаться</button>
+      </form>
+    </div>
     <!-- build:js -->
     <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/popper.js"></script>

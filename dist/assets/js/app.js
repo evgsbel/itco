@@ -138,8 +138,9 @@ var swiperService = new Swiper(".service-slider", {
 });
 /* honor slider */
 var swiperhonors = new Swiper(".honors-slider", {
-  slidesPerView: 2,
+  slidesPerView: 2.8,
   spaceBetween: 50,
+  centeredSlides: true,
   loop: true,
   navigation: {
     nextEl: ".honors__nav-next",
@@ -147,11 +148,11 @@ var swiperhonors = new Swiper(".honors-slider", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 20
     },
     769: {
-      slidesPerView: 2,
+      slidesPerView: 2.8,
       spaceBetween: 50
     }
   }

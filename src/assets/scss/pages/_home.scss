@@ -4,6 +4,7 @@
   padding: 187px 0;
   background-image: url('../img/hero-bg.png');
   background-size: cover;
+  height: 100vh;
   @include r(1024) {
     padding-bottom: 50px;
   }
@@ -58,6 +59,7 @@
 }
 
 .hero-form {
+  position: relative;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   padding: 5px;
@@ -68,7 +70,20 @@
   @include r(1024) {
     margin-top: 20px;
   }
-
+  &::after {
+content: '';
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    background: #FFFFFF;
+    filter: blur(100px);
+    width: 460px;
+    height: 460px;
+  }
+  & > * {
+    z-index: 500;
+    position: relative;
+  }
   &__heading {
     margin-bottom: 32px;
     padding: 16px 0;
@@ -201,7 +216,7 @@
       display: block;
       height: 1px;
       width: 85%;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #909BAD 51.89%, rgba(255, 255, 255, 0) 100%)
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(144,155,173,0.4) 51.89%, rgba(255, 255, 255, 0) 100%)
     }
     &::after {
       content: '';
@@ -211,7 +226,7 @@
       display: block;
       height: 85%;
       width: 1px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #909BAD 51.89%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(144,155,173,0.4) 51.89%, rgba(255, 255, 255, 0) 100%);
       @include r(576) {
         content: none;
       }
@@ -297,29 +312,53 @@
 // directions
 
 .direction {
-  padding-bottom: 50px;
+  padding-bottom: 0;
 
   &__item {
     text-align: center;
     height: 260px;
     cursor: pointer;
+
     &.tabs__btn_active {
       padding: 20px;
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
       background: linear-gradient(90deg, #F8FAFB 0%, #E9EFF4 48.44%, #F8FAFB 100%);
       backdrop-filter: blur(10px);
-
+      .direction__img-wrp::before {
+        opacity: 1;
+      }
       p {
         color: #e24230;
       }
     }
 
-    img {
+    .direction__img-wrp {
+      position: relative;
       margin-bottom: 20px;
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px;
+      display: block;
+      padding-top: 7px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: -5px;
+        right: -5px;
+        background: linear-gradient(24deg, #E9EFF4, #FFFFFF);
+        border-radius: 23px;
+        z-index: -1;
+        opacity: 0;
+        transition: .3s opacity ease-in-out;
+      }
+      img {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+      }
     }
   }
 
@@ -339,12 +378,13 @@
     font-size: 22px;
     line-height: 26px;
     color: #212E33;
+    transition: .3s color ease-in-out;
   }
 
   &__content {
     display: flex;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 40px 20px 90px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background: linear-gradient(90deg, #F8FAFB 0%, #E9EFF4 48.44%, #F8FAFB 100%);
@@ -383,6 +423,13 @@
 
   .tabs__content_active {
     display: flex;
+  }
+
+  &__item:hover .direction__img-wrp::before {
+    opacity: 1;
+  }
+  &__item:hover .direction__caption {
+    color: #e24230;
   }
 
 }
@@ -755,10 +802,19 @@
   &__list {
 
   }
-
+.honors-slider {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
   &__item {
     display: flex;
     justify-content: space-around;
+    opacity: 0.4;
+    transition: .3s opacity ease-in-out;
+    &.swiper-slide-active {
+      opacity: 1;
+    }
     @include r(576) {
       flex-direction: column;
     }
@@ -890,7 +946,9 @@
     background: none;
     backdrop-filter: none;
     padding: 0;
-
+    &::after {
+      content: none;
+    }
 
     input {
       background-color: transparent;
