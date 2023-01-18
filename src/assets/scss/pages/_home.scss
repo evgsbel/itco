@@ -172,17 +172,76 @@
   &__list {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 110px 94px;
     @include r(576) {
       flex-direction: column;
     }
   }
 
   &__item {
-    flex: 0 0 18%;
+    position: relative;
+    flex: 0 0 25%;
+    padding: 80px 50px 45px;
     text-align: center;
+    @include r(1024) {
+      flex: 1 1 24%;
+    }
+    @include r(768) {
+      flex-basis: 50%;
+    }
     @include r(576) {
       flex-basis: 100%;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: block;
+      height: 1px;
+      width: 85%;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #909BAD 51.89%, rgba(255, 255, 255, 0) 100%)
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 15%;
+      right: 0;
+      display: block;
+      height: 85%;
+      width: 1px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #909BAD 51.89%, rgba(255, 255, 255, 0) 100%);
+      @include r(576) {
+        content: none;
+      }
+    }
+    &:nth-child(4)::after {
+      content: none;
+      @include r(1024) {
+        content: '';
+      }
+    }
+    &:nth-child(5)::before,
+    &:nth-child(6)::before,
+    &:nth-child(7)::before {
+      content: none;
+    }
+    &:nth-child(5)::before,
+    &:nth-child(6)::before {
+      @include r(1024) {
+        content: '';
+      }
+    }
+    &:nth-child(even)::after,
+    &:nth-child(7)::after {
+      @include r(768) {
+        content: none;
+      }
+    }
+
+    &:hover > .advantages__hide {
+      opacity: 1;
     }
   }
 
@@ -195,7 +254,43 @@
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    color: #909BAD
+    color: #909BAD;
+
+  }
+}
+
+.advantages-hide {
+  opacity: 0;
+  position: absolute;
+  width: 95%;
+  height: 73%;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: left;
+  transition: .3s opacity ease-in-out;
+  padding: 0 18px;
+
+  &__heading {
+    display: flex;
+    gap: 20px;
+  }
+  &__img {
+    width: 31px;
+    height: 35px;
+  }
+  &__caption {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #909BAD;
+  }
+  &__description {
+    font-size: 15px;
+    line-height: 26px;
+    color: #909BAD;
   }
 }
 
@@ -207,8 +302,8 @@
   &__item {
     text-align: center;
     height: 260px;
-
-    &.is-active {
+    cursor: pointer;
+    &.tabs__btn_active {
       padding: 20px;
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -280,6 +375,14 @@
     font-size: 22px;
     line-height: 26px;
     text-transform: uppercase;
+  }
+
+  .tabs__content  {
+    display: none;
+  }
+
+  .tabs__content_active {
+    display: flex;
   }
 
 }

@@ -76,10 +76,10 @@ var swiperDirection = new Swiper(".direction-slider", {
       slidesPerView: 1,
       spaceBetween: 20
     },
-    576: {
+    768: {
       slidesPerView: 2
     },
-    768: {
+    900: {
       slidesPerView: 3
     },
     1024: {
@@ -152,4 +152,23 @@ var swiperhonors = new Swiper(".honors-slider", {
       spaceBetween: 50
     }
   }
+});
+
+// tabs
+
+document.addEventListener('DOMContentLoaded', function () {
+  var tabsBtn = document.querySelectorAll('.tabs__btn');
+  tabsBtn.forEach(function (el) {
+    el.addEventListener('click', function (event) {
+      tabsBtn.forEach(function (tabsBtn) {
+        tabsBtn.classList.remove('tabs__btn_active');
+      });
+      var path = event.currentTarget.dataset.path;
+      document.querySelectorAll('.tabs__content').forEach(function (tabContent) {
+        tabContent.classList.remove('tabs__content_active');
+      });
+      document.querySelector("[data-target=\"".concat(path, "\"]")).classList.add('tabs__content_active');
+      el.classList.add('tabs__btn_active');
+    });
+  });
 });
