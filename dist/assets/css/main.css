@@ -11843,6 +11843,11 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .callback-btn {
+    display: none;
+  }
+}
 .callback-btn:hover {
   color: #fff;
 }
@@ -12471,6 +12476,7 @@ ul {
 @media only screen and (max-width: 1024px) {
   .hero {
     padding-bottom: 50px;
+    height: 100%;
   }
 }
 .hero__row {
@@ -12545,6 +12551,13 @@ ul {
           filter: blur(100px);
   width: 460px;
   height: 460px;
+}
+@media only screen and (max-width: 576px) {
+  .hero-form::after {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+  }
 }
 .hero-form > * {
   z-index: 500;
@@ -12683,6 +12696,11 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .advantages__title {
+    margin-bottom: 0;
   }
 }
 .advantages__item {
@@ -12870,6 +12888,12 @@ ul {
   .direction__img {
     -o-object-fit: none;
        object-fit: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .direction__img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 .direction__caption {
@@ -13202,12 +13226,6 @@ ul {
 }
 @media only screen and (max-width: 576px) {
   .steps__item {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .steps__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -13268,6 +13286,13 @@ ul {
   color: #fff;
   width: 190px;
   height: 50px;
+}
+@media only screen and (max-width: 576px) {
+  .projects__btn {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+  }
 }
 
 /* numbers */
@@ -13346,10 +13371,8 @@ ul {
 }
 @media only screen and (max-width: 576px) {
   .honors__item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
+    text-align: center;
   }
 }
 .honors__heading {
@@ -13365,9 +13388,9 @@ ul {
 }
 @media only screen and (max-width: 576px) {
   .honors__heading {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .honors__caption {
@@ -13393,6 +13416,11 @@ ul {
   text-align: right;
   color: #909BAD;
   width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .honors__span {
+    display: none;
+  }
 }
 
 .main-bottom {

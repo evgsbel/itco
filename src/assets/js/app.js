@@ -151,7 +151,7 @@ var swiperhonors = new Swiper(".honors-slider", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     769: {

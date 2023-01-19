@@ -153,6 +153,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include r (768) {
+    display: none;
+  }
   &:hover {
     color: #fff;
   }
