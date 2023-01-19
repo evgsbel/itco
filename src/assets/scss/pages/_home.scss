@@ -476,12 +476,17 @@ content: '';
     width: 54px;
     height: 71px;
     margin-right: 30px;
+    @include r(576) {
+      margin-right: 0;
+      text-align: center;
+    }
   }
 
   &__heading {
     margin-right: 35px;
     @include r(576) {
       margin-right: 0;
+      text-align: center;
     }
   }
 
@@ -547,6 +552,10 @@ content: '';
     line-height: 17px;
     @include r(600) {
       margin-right: 0;
+    }
+    @include r(576) {
+      text-align: center;
+      line-height: 30px;
     }
     a {
       text-decoration: underline;

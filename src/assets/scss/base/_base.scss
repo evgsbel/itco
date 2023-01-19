@@ -261,5 +261,8 @@ section {
   }
 }
 
-
-
+.only-desktop {
+  @include r(576) {
+    display: none;
+  }
+}

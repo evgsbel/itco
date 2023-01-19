@@ -11999,6 +11999,12 @@ section {
           box-shadow: none;
   overflow: hidden;
 }
+@media only screen and (max-width: 576px) {
+  .only-desktop {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: "Lato";
   src: local("Lato"), local("Lato-Light"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff");
@@ -13012,12 +13018,19 @@ ul {
   height: 71px;
   margin-right: 30px;
 }
+@media only screen and (max-width: 576px) {
+  .demo__icon {
+    margin-right: 0;
+    text-align: center;
+  }
+}
 .demo__heading {
   margin-right: 35px;
 }
 @media only screen and (max-width: 576px) {
   .demo__heading {
     margin-right: 0;
+    text-align: center;
   }
 }
 .demo__caption {
@@ -13115,6 +13128,12 @@ ul {
 @media only screen and (max-width: 600px) {
   .demo__agreement {
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .demo__agreement {
+    text-align: center;
+    line-height: 30px;
   }
 }
 .demo__agreement a {
