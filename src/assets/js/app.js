@@ -3,9 +3,25 @@
 Inputmask({"mask": "+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9"}).mask('.phone-mask');
 
 
-$('[data-fancybox=""]').fancybox({
-  // Options will go here
-});
+$(()=>{
+  $.fancybox.defaults.btnTpl.smallBtn = '<button type="button" data-fancybox-close class="fancybox-button fancybox-close-small" title="{{CLOSE}}">' +
+    '<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+    '<rect y="3.53657" width="5" height="30" rx="2.5" transform="rotate(-45 0 3.53657)" fill="white"/>' +
+    '<rect x="3.53662" y="24.7487" width="5" height="30" rx="2.5" transform="rotate(-135 3.53662 24.7487)" fill="white"/>' +
+    '</svg>' +
+    '</button>';
+  $('[data-fancybox]').fancybox({
+
+    animationEffect: "zoom-in-out",
+    animationDuration: 600,
+    transitionEffect: "rotate",
+    transitionDuration: 400,
+  });
+})
+
+
+
+
 
 
 /* dusabled submit */
@@ -36,7 +52,6 @@ $(".js-about-checkbox").on('change', function(){
   }
 });
 
-/* mobile menu */
 // mobile menu
 $(() => {
   const btnMenu = document.querySelector('.burger');

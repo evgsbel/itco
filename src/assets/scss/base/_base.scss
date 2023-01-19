@@ -18,9 +18,11 @@ main {
 body {
   background-color: #fff;
   color: #4B4C4C;
+
   &.opened-menu {
     overflow: hidden;
   }
+
   @include r(600) {
     padding-top: 0 !important;
   }
@@ -31,17 +33,16 @@ body {
   @include r(1366) {
     padding: 0 30px;
   }
-//  @include r(480) {
-//    padding: 0 12px;
-//  }
-//}
-//.row {
-//  @include r(480) {
-//    margin-left: -12px;
-//    margin-right: -12px;
-//  }
+  //  @include r(480) {
+  //    padding: 0 12px;
+  //  }
+  //}
+  //.row {
+  //  @include r(480) {
+  //    margin-left: -12px;
+  //    margin-right: -12px;
+  //  }
 }
-
 
 
 /**
@@ -59,6 +60,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+
   &:hover {
     text-decoration: none;
     color: inherit;
@@ -78,16 +80,20 @@ img {
 
 .flex {
   display: flex;
+
   &_h-center {
     align-items: center;
   }
+
   &_w-center {
     justify-content: center;
   }
-  &_all-center{
+
+  &_all-center {
     align-items: center;
     justify-content: center;
   }
+
   &_all-sb {
     align-items: center;
     justify-content: space-between;
@@ -111,6 +117,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   transition: .3s opacity ease-in-out;
+
   &.opened-menu {
     opacity: 1;
     z-index: 50;
@@ -122,13 +129,16 @@ img {
   top: 50%;
   transform: translateY(-50%);
   z-index: 100;
+
   svg {
     width: 14px;
     height: 24px;
   }
+
   &_left {
     left: 0;
   }
+
   &_right {
     right: 0;
   }
@@ -153,12 +163,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include r (768) {
+  @include r(768) {
     display: none;
   }
+
   &:hover {
     color: #fff;
   }
+
   &__rings {
     border: 1px solid rgba(226, 66, 48, 0.2);
     position: absolute;
@@ -191,7 +203,6 @@ img {
     animation-name: pulse_4;
   }
 }
-
 
 
 @keyframes pulse_1 {
@@ -240,6 +251,7 @@ img {
     transform: scale(1.7, 1.7);
   }
 }
+
 @keyframes pulse_4 {
   from {
     opacity: 1;
@@ -253,11 +265,19 @@ img {
 }
 
 .popup {
+  width: 510px;
+  max-width: 100%;
+  padding: 35px;
   background: none;
-  box-shadow: none;
-  overflow: hidden;
-  &::after {
+  .hero-form {
+    backdrop-filter: none;
+  }
+  .hero-form::after {
+    content: none;
+  }
 
+  .hero-form__heading {
+    padding: 15px;
   }
 }
 

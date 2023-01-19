@@ -11990,11 +11990,22 @@ img {
   }
 }
 .popup {
+  width: 510px;
+  max-width: 100%;
+  padding: 35px;
   background: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  overflow: hidden;
 }
+.popup .hero-form {
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+.popup .hero-form::after {
+  content: none;
+}
+.popup .hero-form__heading {
+  padding: 15px;
+}
+
 @media only screen and (max-width: 576px) {
   .only-desktop {
     display: none;
@@ -12221,6 +12232,17 @@ ul {
   .header__phone {
     font-size: 26px;
   }
+}
+.header__callback {
+  border-radius: 20px;
+  background-color: #e24230;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  padding: 10px 30px;
+  max-width: 190px;
 }
 
 .logo svg {

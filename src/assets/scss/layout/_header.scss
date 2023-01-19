@@ -59,7 +59,18 @@
       font-size: 26px;
     }
   }
+  &__callback {
+    border-radius: 20px;
+    background-color: #e24230;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    padding: 10px 30px;
+    max-width: 190px;
 
+  }
 }
 
 .logo {
