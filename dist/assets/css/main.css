@@ -11778,10 +11778,6 @@ img {
           justify-content: space-between;
 }
 
-section {
-  padding: 72px 0 100px;
-}
-
 .overflow {
   position: absolute;
   top: 0;
@@ -12005,6 +12001,10 @@ section {
   }
 }
 
+.section {
+  background-color: #fff;
+}
+
 @font-face {
   font-family: "Lato";
   src: local("Lato"), local("Lato-Light"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff");
@@ -12096,7 +12096,7 @@ ul {
 }
 
 .title-h2 {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -12146,10 +12146,20 @@ ul {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
+  top: 50px;
   z-index: 50;
   margin: 0 auto;
   width: 100%;
+  -webkit-transition: 0.3s top ease-in-out;
+  transition: 0.3s top ease-in-out;
+}
+.header_fixed {
+  padding: 8px 0;
+  top: 0;
+  background: rgba(47, 152, 228, 0.75);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 .header__row {
   -webkit-box-align: center;
@@ -12215,6 +12225,7 @@ ul {
 
 .logo svg {
   width: 150px;
+  height: 45px;
 }
 
 .burger {
@@ -12486,10 +12497,9 @@ ul {
 
 .hero {
   position: relative;
-  padding: 187px 0;
+  padding: 0;
   background-image: url("../img/hero-bg.png");
   background-size: cover;
-  height: 100vh;
 }
 @media only screen and (max-width: 1024px) {
   .hero {
@@ -12731,10 +12741,8 @@ ul {
             flex-direction: column;
   }
 }
-@media only screen and (max-width: 576px) {
-  .advantages__title {
-    margin-bottom: 0;
-  }
+.advantages__title {
+  margin-bottom: 0;
 }
 .advantages__item {
   position: relative;
@@ -12864,9 +12872,6 @@ ul {
   color: #909BAD;
 }
 
-.direction {
-  padding-bottom: 0;
-}
 .direction__item {
   text-align: center;
   height: 260px;
@@ -12910,6 +12915,9 @@ ul {
 }
 .direction__item .direction__img-wrp img {
   border-radius: 20px;
+}
+.direction__img {
+  max-height: 200px;
 }
 @media only screen and (max-width: 1366px) {
   .direction__img {
@@ -12997,6 +13005,9 @@ ul {
 .demo {
   padding: 17px 0 12px;
   background-color: #E24230;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .demo__flex {
   -webkit-box-align: center;

@@ -94,9 +94,9 @@ img {
   }
 }
 
-section {
-  padding: 72px 0 100px;
-}
+//section {
+//  padding: 72px 0 100px;
+//}
 
 .overflow {
   position: absolute;
@@ -265,4 +265,8 @@ section {
   @include r(576) {
     display: none;
   }
+}
+
+.section {
+  background-color: #fff;
 }

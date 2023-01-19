@@ -1,10 +1,9 @@
 // hero
 .hero {
   position: relative;
-  padding: 187px 0;
+  padding: 0;
   background-image: url('../img/hero-bg.png');
   background-size: cover;
-  height: 100vh;
   @include r(1024) {
     padding-bottom: 50px;
     height: 100%;
@@ -208,9 +207,7 @@ content: '';
   }
 
   &__title {
-    @include r(576) {
       margin-bottom: 0;
-    }
   }
 
   &__item {
@@ -333,7 +330,7 @@ content: '';
 // directions
 
 .direction {
-  padding-bottom: 0;
+
 
   &__item {
     text-align: center;
@@ -384,6 +381,7 @@ content: '';
   }
 
   &__img {
+    max-height: 200px;
     @include r(1366) {
       object-fit: contain;
     }
@@ -462,6 +460,9 @@ content: '';
 .demo {
   padding: 17px 0 12px;
   background-color: #E24230;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   &__flex {
     align-items: center;

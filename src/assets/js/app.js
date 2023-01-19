@@ -204,3 +204,20 @@ $(() => {
     })
   }
 })
+
+$(document).ready(function() {
+  $('#fullpage').fullpage({
+    scrollingSpeed: 1000,
+    verticalCentered: true,
+    afterLoad: function (anchorLink, index) {
+      //for the 2nd vertical section
+      if (index == 1) {
+        $('.header').removeClass('header_fixed');
+      } else {
+        $('.header').addClass('header_fixed');
+      }
+    }
+  });
+});
+
+
