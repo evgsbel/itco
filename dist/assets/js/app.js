@@ -101,9 +101,11 @@ var swiperProject = new Swiper(".projects-slider", {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
+      autoHeight: true
     },
     768: {
+      autoHeight: false,
       slidesPerView: 2,
       spaceBetween: 60
     },

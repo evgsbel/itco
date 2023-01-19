@@ -97,6 +97,7 @@ var swiperDirection = new Swiper(".direction-slider", {
 /* projects slider */
 var swiperProject = new Swiper(".projects-slider", {
   loop: true,
+
   navigation: {
     nextEl: ".projects__nav-next",
     prevEl: ".projects__nav-prev",
@@ -105,8 +106,10 @@ var swiperProject = new Swiper(".projects-slider", {
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
+      autoHeight: true,
     },
     768: {
+      autoHeight: false,
       slidesPerView: 2,
       spaceBetween: 60,
     },

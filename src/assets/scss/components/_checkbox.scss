@@ -5,6 +5,11 @@
     display: block;
     padding-left: 35px;
     cursor: pointer;
+    @include r(576) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+    }
   }
 
   &__label:last-child {

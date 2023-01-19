@@ -122,6 +122,9 @@ content: '';
       max-width: 80%;
       margin: 6px auto;
     }
+    @include r(375) {
+      max-width: 100%;
+    }
 
     &::placeholder {
       text-align: center;
@@ -148,9 +151,15 @@ content: '';
     line-height: 32px;
     justify-content: center;
     margin-bottom: 15px;
+    @include r(480) {
+      font-size: 12px;
+    }
 
     a {
       text-decoration: underline;
+      @include r(576) {
+        display: block;
+      }
     }
   }
 
@@ -351,8 +360,8 @@ content: '';
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px;
-      display: block;
-      padding-top: 7px;
+      display: inline-block;
+      margin-top: 7px;
       &::before {
         content: "";
         position: absolute;
@@ -755,7 +764,7 @@ content: '';
     @include r(576) {
       position: relative;
       display: block;
-      margin: 30px auto 0;
+      margin: 30px auto;
     }
   }
 }
