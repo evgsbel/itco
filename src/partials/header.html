@@ -10,8 +10,9 @@
       </div>
       <div class="col-lg-7 d-none d-lg-block">
         <nav class="nav header__nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#direction" class="nav__link">Направления</a></li>
+
+          <ul class="nav__list" id="menu">
+            <li class="nav__item" ><a href="#direction" class="nav__link">Направления</a></li>
             <li class="nav__item"><a href="#service" class="nav__link">Услуги</a></li>
             <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
             <li class="nav__item"><a href="#numbers" class="nav__link">Мы в цифрах</a></li>
@@ -20,10 +21,8 @@
           </ul>
         </nav>
       </div>
-      <div class="col-5 offset-2 d-sm-block d-md-none">
-        <a href="" class="btn-reset header__callback">Оставить заявку</a>
-      </div>
-      <div class="col-sm-9 d-sm-block d-none col-lg-3">
+
+      <div class="col-sm-9 d-md-block d-none col-lg-3">
         <div class="header__contacts d-none d-md-flex">
           <a href="" class="header__tlg">
             <svg>
@@ -33,7 +32,10 @@
           <a href="tel:+74999597146" class="header__phone">+7 499 959 71 46</a>
         </div>
       </div>
-      <div class="col-1  offset-2 offset-sm-0 d-lg-none">
+      <div class="col-5 offset-3 d-sm-block d-md-none">
+        <button href="" class="btn-reset header__callback" data-fancybox data-src="#popup">Оставить заявку</button>
+      </div>
+      <div class="col-1  offset-sm-1  offset-md-0 d-lg-none">
         <button class="burger btn-reset">
           <span></span><span></span><span></span>
         </button>

@@ -18,6 +18,10 @@
     line-height: 18px;
     color: #fff;
     text-transform: uppercase;
+    @include r(1600) {
+      font-size: 13px;
+      line-height: 16px;
+    }
   }
 }
 
@@ -25,7 +29,7 @@
 .hide-menu {
   display: none;
   @include r(1024) {
-    top: 0;
+    top: -30px;
     position: absolute;
     left: 0;
     z-index: 100;

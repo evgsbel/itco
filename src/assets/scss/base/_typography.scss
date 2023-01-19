@@ -61,6 +61,11 @@ ul {
   color: #212E33;
   text-align: center;
   text-transform: uppercase;
+  @include r(1366) {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
   &_white {
     color: #fff;
   }

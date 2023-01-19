@@ -24,6 +24,8 @@ $(()=>{
 
 
 
+
+
 /* dusabled submit */
 
 
@@ -173,6 +175,10 @@ var swiperhonors = new Swiper(".honors-slider", {
       spaceBetween: 20,
     },
     769: {
+      slidesPerView: 1.8,
+      spaceBetween: 50,
+    },
+    1025: {
       slidesPerView: 2.8,
       spaceBetween: 50,
     },
@@ -203,22 +209,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // anchors
-$(() => {
-  const anchors = document.querySelectorAll('a[href*="#"]')
-
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault()
-
-      const blockID = anchor.getAttribute('href').substr(1)
-
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-    })
-  }
-})
+// $(() => {
+//   const anchors = document.querySelectorAll('a[href*="#"]')
+//
+//   for (let anchor of anchors) {
+//     anchor.addEventListener('click', function (e) {
+//       e.preventDefault()
+//
+//       const blockID = anchor.getAttribute('href').substr(1)
+//
+//       document.getElementById(blockID).scrollIntoView({
+//         behavior: 'smooth',
+//         block: 'start'
+//       })
+//     })
+//   }
+// })
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
@@ -231,8 +237,27 @@ $(document).ready(function() {
       } else {
         $('.header').addClass('header_fixed');
       }
+    },
+    anchors: ['hero','advantages', 'direction', 'service', 'steps', 'projects', 'numbers', 'honors', 'reviews', 'about', 'footer'],
+    responsiveWidth: 1100,
+    afterResponsive: function(isResponsive){
+      if (isResponsive) {
+        $.fn.fullpage.setAutoScrolling(false);
+      } else {
+        $.fn.fullpage.setAutoScrolling(true);
+      }
     }
   });
 });
 
+// $(document).ready(function () {
+//   let windowWidth = $('body').innerWidth()
+//
+//   if (windowWidth < 1100) {
+//     $.fn.fullpage.setAutoScrolling(false);
+//     console.log('responce')
+//   } else {
+//     $.fn.fullpage.setAutoScrolling(true);
+//   }
+// })
 
