@@ -15,6 +15,40 @@ $(function () {
   });
 });
 
+// fixed header
+$(function () {
+  var timer = null;
+  window.addEventListener('scroll', function () {
+    if (timer !== null) {
+      var stickySidebar = function stickySidebar() {
+        var scrollDistance = $(document).scrollTop(),
+          headerHeight = $('.header').outerHeight(true),
+          // sidebarHeight = $('aside').outerHeight(true),
+          footerOffsetTop = $('.js-stop-header').offset().top,
+          $header = $('header');
+        if (scrollDistance >= headerHeight) {
+          $header.addClass('header_fixed');
+        } else {
+          $header.removeClass('header_fixed');
+        }
+        if (scrollDistance + headerHeight >= footerOffsetTop) {
+          $header.removeClass('header_fixed');
+          $header.addClass('out');
+        }
+      };
+      clearTimeout(timer);
+      document.querySelector('header').classList.add('out', 'header_fixed');
+      stickySidebar();
+      $(document).scroll(function () {
+        stickySidebar();
+      });
+    }
+    timer = setTimeout(function () {
+      document.querySelector('header').classList.remove('out');
+    }, 800);
+  }, false);
+});
+
 /* dusabled submit */
 
 $(".js-hero-checkbox").on('change', function () {
@@ -44,6 +78,7 @@ $(function () {
   var btnMenu = document.querySelector('.burger');
   var menu = document.querySelector('.hide-menu');
   var body = document.querySelector('.overflow');
+  var menuLink = document.querySelectorAll('.hide-menu .nav__link');
   // let heroHeight = document.querySelector('.hero').clientHeight
   // let headerHeight = document.querySelector('.header').clientHeight
 
@@ -63,6 +98,11 @@ $(function () {
     body.classList.remove('opened-menu');
     btnMenu.classList.remove('is-active');
   };
+  menuLink.forEach(function (el) {
+    el.addEventListener('click', function (event) {
+      closeMenu();
+    });
+  });
   closeBtn.addEventListener('click', function (e) {
     e.stopPropagation();
     closeMenu();
@@ -226,14 +266,3 @@ $(document).ready(function () {
     }
   });
 });
-
-// $(document).ready(function () {
-//   let windowWidth = $('body').innerWidth()
-//
-//   if (windowWidth < 1100) {
-//     $.fn.fullpage.setAutoScrolling(false);
-//     console.log('responce')
-//   } else {
-//     $.fn.fullpage.setAutoScrolling(true);
-//   }
-// })

@@ -12208,6 +12208,9 @@ ul {
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
+.header_fixed .hide-menu {
+  top: 0;
+}
 .header__row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -12391,7 +12394,7 @@ ul {
 
 .hide-menu {
   display: none;
-  top: 0;
+  top: -30px;
   position: absolute;
   left: 0;
   z-index: 100;
