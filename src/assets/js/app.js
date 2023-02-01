@@ -185,8 +185,8 @@ var swiperProject = new Swiper(".projects-slider", {
 });
 /* service slider */
 var swiperService = new Swiper(".service-slider", {
-  slidesPerView: 3,
-  spaceBetween: 50,
+  slidesPerView: 4,
+  spaceBetween: 25,
   loop: true,
   navigation: {
     nextEl: ".service__nav-next",
@@ -200,9 +200,12 @@ var swiperService = new Swiper(".service-slider", {
     601: {
       slidesPerView: 2,
     },
-    1024: {
+    769: {
       slidesPerView: 3,
-      spaceBetween: 50,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 25,
     },
   },
 });

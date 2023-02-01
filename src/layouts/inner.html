@@ -1,0 +1,53 @@
+{{!-- This is the inner layout for your project, and will be used on inner page. --}}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/animate.css">
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/swiper.min.css">
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
+        integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="{{root}}assets/css/main.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="{{root}}assets/css/rtl.css">
+</head>
+
+<body class="is-inner-page">
+<div class="overflow"></div>
+
+<button class="btn-reset callback-btn" data-fancybox data-src="#popup">
+  Оставить заявку
+  <span class="callback-btn__rings"></span>
+  <span class="callback-btn__rings"></span>
+  <span class="callback-btn__rings"></span>
+  <span class="callback-btn__rings"></span>
+</button>
+<!--Hero-->
+{{> header}}
+
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+<!--        <h1 class="content__h1">{{pagetitle}}</h1>-->
+
+        {{> body}}
+      </div>
+    </div>
+  </div>
+</div>
+{{> about}}
+{{> footer}}
+{{> popup}}
+{{> scripts}}
+</body>
+
+</html>

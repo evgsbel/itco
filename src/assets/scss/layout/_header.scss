@@ -135,3 +135,18 @@
   }
 }
 
+.is-inner-page .header {
+  background-image: url(../img/steps-bg.jpg);
+  top: 0;
+  padding: 20px 0;
+}
+.is-inner-page .header_fixed {
+  padding: 8px 0;
+  top:0;
+  background: rgba(47, 152, 228, 0.75);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.is-inner-page .hide-menu {
+  top: 0;
+}

@@ -5,711 +5,726 @@ script: main
 ---
 
 
-  <section class="hero section" id="" data-anchor="hero">
-    <div class="container">
-      <div class="row hero__row">
-        <div class="col-lg-7">
-          <div class="hero__logo flex">
-            <img src="assets/img/hero-logo.png" alt="ap/ix">
+<section class="hero section" data-anchor="hero">
+  <div class="container">
+    <div class="row hero__row">
+      <div class="col-lg-7">
+        <div class="hero__logo flex">
+          <img src="assets/img/hero-logo.png" alt="ap/ix">
+        </div>
+        <h1 class="hero__title">Отечественная PACS/RIS-система управления
+          и&nbsp;обработки медицинских изображений и данных</h1>
+        <ul class="hero__list">
+          <li class="hero__list-item">Безопасное хранение данных и доступность из любой точки мира из web-браузера
+          </li>
+          <li class="hero__list-item">Интеграция с HL7, FHIR, DICOM, и другими международными протоколами</li>
+          <li class="hero__list-item">Интеграция с ЕМИАС</li>
+          <li class="hero__list-item">Интеграция с любым медицинским оборудованием и лабораториями</li>
+          <li class="hero__list-item">Маршрутизация пациентов в рамках скрининга</li>
+          <li class="hero__list-item">Автоматизация работы радиологической службы</li>
+          <li class="hero__list-item">Обучение работе в системе и поддержка 24/7</li>
+        </ul>
+      </div>
+      <div class="offset-xl-1 col-xl-4 col-lg-5">
+        <form action="" class="hero__form hero-form">
+          <div class="hero-form__heading">Записаться на демонстрацию продукта</div>
+          <label for="hero-phone" class="hero-form__label"></label>
+          <input type="tel" id="hero-phone" name="hero-phone" class="hero-form__input phone-mask"
+                 placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+          <div class="hero-form__conf checkbox flex">
+            <label for="conf" class="checkbox__label">
+              <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
+              <span class="checkbox__pane"></span>
+              Я согласен(а) на <a href="/">обработку персональных данных</a>
+            </label>
           </div>
-          <h1 class="hero__title">Отечественная PACS/RIS-система управления
-            и&nbsp;обработки медицинских изображений и данных</h1>
-          <ul class="hero__list">
-            <li class="hero__list-item">Безопасное хранение данных и доступность из любой точки мира из web-браузера
-            </li>
-            <li class="hero__list-item">Интеграция с HL7, FHIR, DICOM, и другими международными протоколами</li>
-            <li class="hero__list-item">Интеграция с ЕМИАС</li>
-            <li class="hero__list-item">Интеграция с любым медицинским оборудованием и лабораториями</li>
-            <li class="hero__list-item">Маршрутизация пациентов в рамках скрининга</li>
-            <li class="hero__list-item">Автоматизация работы радиологической службы</li>
-            <li class="hero__list-item">Обучение работе в системе и поддержка 24/7</li>
-          </ul>
-        </div>
-        <div class="offset-xl-1 col-xl-4 col-lg-5">
-          <form action="" class="hero__form hero-form">
-            <div class="hero-form__heading">Записаться на демонстрацию продукта</div>
-            <label for="hero-phone" class="hero-form__label"></label>
-            <input type="tel" id="hero-phone" name="hero-phone" class="hero-form__input phone-mask"
-                   placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
-            <div class="hero-form__conf checkbox flex">
-              <label for="conf" class="checkbox__label">
-                <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
-                <span class="checkbox__pane"></span>
-                Я согласен(а) на <a href="/">обработку персональных данных</a>
-              </label>
+          <p class="hero-form__present">В подарок: презентация о системе AP/IX</p>
+          <button class="btn-reset hero-form__submit js-hero-submit">Записаться</button>
+        </form>
+      </div>
+      <svg class="hero__mouth">
+        <use xlink:href="assets/img/sprite.svg#mouth-icon"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!--Advantages-->
+<section class="advantages section" data-anchor="advantages">
+  <div class="container">
+    <div class="row advantages__row">
+      <div class="col-12">
+        <h2 class="title-h2 advantages__title">Преимущества</h2>
+        <ul class="advantages__list flex">
+          <li class="advantages__item">
+            <img src="assets/img/svg/adv-icon-01.svg" alt="" class="advantages__img">
+            <p class="advantages__caption">Безопасность
+              и доступность данных</p>
+            <div class="advantages__hide advantages-hide">
+              <div class="advantages-hide__heading">
+                <img src="assets/img/svg/adv-icon-01.svg" alt="" class="advantages-hide__img">
+                <p class="advantages-hide__caption">Безопасность <br>
+                  и доступность данных</p>
+              </div>
+              <p class="advantages-hide__description">Данные загружаются на наш сервер, и больше нет необходимости в
+                физических носителях, поэтому история болезни пациента больше не потеряется и не перепутается</p>
             </div>
-            <p class="hero-form__present">В подарок: презентация о системе AP/IX</p>
-            <button class="btn-reset hero-form__submit js-hero-submit">Записаться</button>
-          </form>
+          </li>
+          <li class="advantages__item">
+            <img src="assets/img/svg/adv-icon-02.svg" alt="" class="advantages__img">
+            <p class="advantages__caption">Оценка процесса
+              в&nbsp;динамике</p>
+            <div class="advantages__hide advantages-hide">
+              <div class="advantages-hide__heading">
+                <img src="assets/img/svg/adv-icon-02.svg" alt="" class="advantages-hide__img">
+                <p class="advantages-hide__caption">Оценка процесса <br>
+                  в&nbsp;динамике</p>
+              </div>
+              <p class="advantages-hide__description">Все данные исследований по пациенту, загруженные в APIX, доступны
+                в любом регионе, и удобны для динамического наблюдения</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <img src="assets/img/svg/adv-icon-03.svg" alt="" class="advantages__img">
+            <p class="advantages__caption">Второе <br>
+              мнение</p>
+            <div class="advantages__hide advantages-hide">
+              <div class="advantages-hide__heading">
+                <img src="assets/img/svg/adv-icon-03.svg" alt="" class="advantages-hide__img">
+                <p class="advantages-hide__caption">Второе <br>
+                  мнение</p>
+              </div>
+              <p class="advantages-hide__description">Вы можете найти похожие случаи среди боле 1 045 000 диагнозов,
+                исследований и историй болезни, а также обсудить их с коллегами в режиме исследования пациента хранится
+                месте, и можно ннн-лайн.в одном </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <img src="assets/img/svg/adv-icon-04.svg" alt="" class="advantages__img">
+            <p class="advantages__caption">Автоматический алгоритм поиска
+              и&nbsp;анализа патологий</p>
+            <div class="advantages__hide advantages-hide">
+              <div class="advantages-hide__heading">
+                <img src="assets/img/svg/adv-icon-04.svg" alt="" class="advantages-hide__img">
+                <p class="advantages-hide__caption">Автоматический алгоритм поиска
+                  и&nbsp;анализа патологий</p>
+              </div>
+              <p class="advantages-hide__description">Система умеет определять по снимкам признаки различных
+                заболеваний, в том числе онкологические процессы, и поражение лёгких при COVID-19</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <img src="assets/img/svg/adv-icon-05.svg" alt="" class="advantages__img">
+            <p class="advantages__caption">Помощь в принятии врачебных решений</p>
+            <div class="advantages__hide advantages-hide">
+              <div class="advantages-hide__heading">
+                <img src="assets/img/svg/adv-icon-05.svg" alt="" class="advantages-hide__img">
+                <p class="advantages-hide__caption">Помощь в принятии врачебных решений</p>
+              </div>
+              <p class="advantages-hide__description">Cистема обрабатывает диагностические данные и предлагает варианты
+                лечения на основе анализа аналогичных случаев</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <img src="assets/img/svg/adv-icon-06.svg" alt="" class="advantages__img">
+            <p class="advantages__caption">Высокая скорость передачи данных</p>
+            <div class="advantages__hide advantages-hide">
+              <div class="advantages-hide__heading">
+                <img src="assets/img/svg/adv-icon-06.svg" alt="" class="advantages-hide__img">
+                <p class="advantages-hide__caption">Высокая скорость передачи данных</p>
+              </div>
+              <p class="advantages-hide__description">Объёмные фото- и ведиоматериалы в считанные минуты доступны вашим
+                коллегам и пациентам, даже если они находятся за тысячи километров от вас</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <img src="assets/img/svg/adv-icon-07.svg" alt="" class="advantages__img">
+            <p class="advantages__caption">Он-лайн конференции и&nbsp;вебинары</p>
+            <div class="advantages__hide advantages-hide">
+              <div class="advantages-hide__heading">
+                <img src="assets/img/svg/adv-icon-07.svg" alt="" class="advantages-hide__img">
+                <p class="advantages-hide__caption">Он-лайн конференции и&nbsp;вебинары</p>
+              </div>
+              <p class="advantages-hide__description">Вы можете собрать на нашей платформе он-лайн конференцию с
+                коллегами из любой точки мира для обсуждения сложных случаев.
+                Также платформа позволяет проводить обучающие вебинары на конкретных примерах из доступных
+                материалов</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Direction -->
+<section class="direction section" data-anchor="direction">
+  <div class="container">
+    <div class="row position-relative">
+      <div class="col-12">
+        <h2 class="title-h2">Модули (Составные решения)</h2>
+        <div class="swiper direction-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="direction__item tabs__btn tabs__btn tabs__btn_active is-active" data-path="one">
+                <div class="direction__img-wrp"><img src="assets/img/dir-01.jpg"/></div>
+                <p class="direction__caption">Архив</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="direction__item tabs__btn" data-path="two">
+                <div class="direction__img-wrp"><img src="assets/img/dir-02.jpg"/></div>
+                <p class="direction__caption">Визуализация</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="direction__item tabs__btn" data-path="three">
+                <div class="direction__img-wrp"><img src="assets/img/dir-03.jpg"/></div>
+                <p class="direction__caption">Dicomizer</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="direction__item tabs__btn" data-path="four">
+                <div class="direction__img-wrp"><img src="assets/img/dir-04.jpg"/></div>
+                <p class="direction__caption">РИС</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="direction__item tabs__btn" data-path="five">
+                <div class="direction__img-wrp"><img src="assets/img/dir-01.jpg"/></div>
+                <p class="direction__caption">Телерадиология</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="direction__item tabs__btn" data-path="six">
+                <div class="direction__img-wrp"><img src="assets/img/dir-02.jpg"/></div>
+                <p class="direction__caption">Интеграция информационных систем (АИ)</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="direction__item tabs__btn" data-path="seven">
+                <div class="direction__img-wrp"><img src="assets/img/dir-03.jpg"/></div>
+                <p class="direction__caption">BI</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <svg class="hero__mouth">
-          <use xlink:href="assets/img/sprite.svg#mouth-icon"></use>
+      </div>
+      <div class="slider-navigation slider-navigation_left direction__nav direction__nav-next">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+        </svg>
+      </div>
+      <div class="slider-navigation slider-navigation_right direction__nav direction__nav-prev">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-right"></use>
         </svg>
       </div>
     </div>
-  </section >
-
-  <!--Advantages-->
-  <section class="advantages section" id="" data-anchor="advantages">
-    <div class="container">
-      <div class="row advantages__row">
-        <div class="col-12">
-          <h2 class="title-h2 advantages__title">Преимущества</h2>
-          <ul class="advantages__list flex">
-            <li class="advantages__item">
-              <img src="assets/img/svg/adv-icon-01.svg" alt="" class="advantages__img">
-              <p class="advantages__caption">Безопасность
-                и доступность данных</p>
-              <div class="advantages__hide advantages-hide">
-                <div class="advantages-hide__heading">
-                  <img src="assets/img/svg/adv-icon-01.svg" alt="" class="advantages-hide__img">
-                  <p class="advantages-hide__caption">Безопасность <br>
-                    и доступность данных</p>
-                </div>
-                <p class="advantages-hide__description">Данные загружаются на наш сервер, и больше нет необходимости в
-                  физических носителях, поэтому история болезни пациента больше не потеряется и не перепутается,</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img src="assets/img/svg/adv-icon-02.svg" alt="" class="advantages__img">
-              <p class="advantages__caption">Оценка процесса
-                в&nbsp;динамике</p>
-              <div class="advantages__hide advantages-hide">
-                <div class="advantages-hide__heading">
-                  <img src="assets/img/svg/adv-icon-02.svg" alt="" class="advantages-hide__img">
-                  <p class="advantages-hide__caption">Оценка процесса <br>
-                    в&nbsp;динамике</p>
-                </div>
-                <p class="advantages-hide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                  architecto consequuntur deleniti distinctio, dolorum enim incidunt iusto laboriosam</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img src="assets/img/svg/adv-icon-03.svg" alt="" class="advantages__img">
-              <p class="advantages__caption">Второе <br>
-                мнение</p>
-              <div class="advantages__hide advantages-hide">
-                <div class="advantages-hide__heading">
-                  <img src="assets/img/svg/adv-icon-03.svg" alt="" class="advantages-hide__img">
-                  <p class="advantages-hide__caption">Второе <br>
-                    мнение</p>
-                </div>
-                <p class="advantages-hide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                  architecto consequuntur deleniti distinctio, dolorum enim incidunt iusto laboriosam</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img src="assets/img/svg/adv-icon-04.svg" alt="" class="advantages__img">
-              <p class="advantages__caption">Автоматический алгоритм поиска
-                и&nbsp;анализа патологий</p>
-              <div class="advantages__hide advantages-hide">
-                <div class="advantages-hide__heading">
-                  <img src="assets/img/svg/adv-icon-04.svg" alt="" class="advantages-hide__img">
-                  <p class="advantages-hide__caption">Автоматический алгоритм поиска
-                    и&nbsp;анализа патологий</p>
-                </div>
-                <p class="advantages-hide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                  architecto consequuntur deleniti distinctio, dolorum enim incidunt iusto laboriosam</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img src="assets/img/svg/adv-icon-05.svg" alt="" class="advantages__img">
-              <p class="advantages__caption">Помощь в принятии врачебных решений</p>
-              <div class="advantages__hide advantages-hide">
-                <div class="advantages-hide__heading">
-                  <img src="assets/img/svg/adv-icon-05.svg" alt="" class="advantages-hide__img">
-                  <p class="advantages-hide__caption">Помощь в принятии врачебных решений</p>
-                </div>
-                <p class="advantages-hide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                  architecto consequuntur deleniti distinctio, dolorum enim incidunt iusto laboriosam</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img src="assets/img/svg/adv-icon-06.svg" alt="" class="advantages__img">
-              <p class="advantages__caption">Высокая скорость передачи данных</p>
-              <div class="advantages__hide advantages-hide">
-                <div class="advantages-hide__heading">
-                  <img src="assets/img/svg/adv-icon-06.svg" alt="" class="advantages-hide__img">
-                  <p class="advantages-hide__caption">Высокая скорость передачи данных</p>
-                </div>
-                <p class="advantages-hide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                  architecto consequuntur deleniti distinctio, dolorum enim incidunt iusto laboriosam</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img src="assets/img/svg/adv-icon-07.svg" alt="" class="advantages__img">
-              <p class="advantages__caption">Он-лайн конференции и&nbsp;вебинары</p>
-              <div class="advantages__hide advantages-hide">
-                <div class="advantages-hide__heading">
-                  <img src="assets/img/svg/adv-icon-07.svg" alt="" class="advantages-hide__img">
-                  <p class="advantages-hide__caption">Он-лайн конференции и&nbsp;вебинары</p>
-                </div>
-                <p class="advantages-hide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                  architecto consequuntur deleniti distinctio, dolorum enim incidunt iusto laboriosam</p>
-              </div>
-            </li>
-          </ul>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="direction__content tabs__content tabs__content_active" data-target="one">
+          <div class="direction__text">
+            <h3 class="direction__title">Архив</h3>
+            <p class="mb-4">Компания ITco представляет совершенно новую и полностью унифицированную ИТ-платформу AP/IX
+              для обработки изображений. Все соответствующие компоненты, включая системы архивации и передачи
+              изображений (PACS), отчеты и распознавание речи, интерфейсы, передовые клинические приложения для
+              обработки изображений, веб-просмотр с клиентом не требующим установки, виртуальные сети VNA, RIS и
+              инструменты бизнес-аналитики, построены на этой платформе.</p>
+            <button class="btn btn-reset direction__btn">Узнать подробнее</button>
+          </div>
+        </div>
+        <div class="direction__content tabs__content" data-target="two">
+          <div class="direction__text">
+            <h3 class="direction__title">Визуализация</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci architecto
+              asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus nesciunt nostrum
+              quidem quos rerum, voluptate?
+            </p>
+            <button class="btn btn-reset direction__btn">Узнать подробнее</button>
+          </div>
+        </div>
+        <div class="direction__content tabs__content" data-target="three">
+          <div class="direction__text">
+            <h3 class="direction__title">Dicomizer</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci architecto
+              asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus nesciunt nostrum
+              quidem quos rerum, voluptate?
+            </p>
+            <button class="btn btn-reset direction__btn">Узнать подробнее</button>
+          </div>
+        </div>
+        <div class="direction__content tabs__content" data-target="four">
+          <div class="direction__text">
+            <h3 class="direction__title">РИС</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci architecto
+              asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus nesciunt nostrum
+              quidem quos rerum, voluptate?
+            </p>
+            <button class="btn btn-reset direction__btn">Узнать подробнее</button>
+          </div>
+        </div>
+        <div class="direction__content tabs__content" data-target="five">
+          <div class="direction__text">
+            <h3 class="direction__title">Телерадиология</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci architecto
+              asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus nesciunt nostrum
+              quidem quos rerum, voluptate?
+            </p>
+            <button class="btn btn-reset direction__btn">Узнать подробнее</button>
+          </div>
+        </div>
+        <div class="direction__content tabs__content" data-target="six">
+          <div class="direction__text">
+            <h3 class="direction__title">Интеграция информационных систем (АИ)</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci architecto
+              asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus nesciunt nostrum
+              quidem quos rerum, voluptate?
+            </p>
+            <button class="btn btn-reset direction__btn">Узнать подробнее</button>
+          </div>
+        </div>
+        <div class="direction__content tabs__content" data-target="seven">
+          <div class="direction__text">
+            <h3 class="direction__title">BI</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci architecto
+              asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus nesciunt nostrum
+              quidem quos rerum, voluptate?
+            </p>
+            <button class="btn btn-reset direction__btn">Узнать подробнее</button>
+          </div>
         </div>
       </div>
     </div>
-  </section>
- <!-- Direction -->
-  <section class="direction section" id="" data-anchor="direction">
-      <div class="container">
-        <div class="row position-relative">
-          <div class="col-12">
-            <h2 class="title-h2">Основные направления применения</h2>
-            <div class="swiper direction-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="direction__item tabs__btn tabs__btn tabs__btn_active is-active" data-path="one">
-                    <div class="direction__img-wrp"><img src="assets/img/dir-01.jpg"/></div>
-                    <p class="direction__caption">Рентгенология</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="direction__item tabs__btn" data-path="two">
-                    <div class="direction__img-wrp"><img src="assets/img/dir-02.jpg"/></div>
-                    <p class="direction__caption">Кардиология</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="direction__item tabs__btn" data-path="three">
-                    <div class="direction__img-wrp"><img src="assets/img/dir-03.jpg"/></div>
-                    <p class="direction__caption">Онкология</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="direction__item tabs__btn" data-path="four">
-                    <div class="direction__img-wrp"><img src="assets/img/dir-04.jpg"/></div>
-                    <p class="direction__caption">Радиоизотопная диагностика</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slider-navigation slider-navigation_left direction__nav direction__nav-next">
-            <svg>
-              <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+  </div>
+  <section class="demo ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="flex demo__flex">
+            <svg class="demo__icon">
+              <use xlink:href="assets/img/sprite.svg#demo-icon"></use>
             </svg>
-          </div>
-          <div class="slider-navigation slider-navigation_right direction__nav direction__nav-prev">
-            <svg>
-              <use xlink:href="assets/img/sprite.svg#nav-right"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="direction__content tabs__content tabs__content_active" data-target="one">
-              <div class="direction__text">
-                <h3 class="direction__title">Платформа веб-визуализации AP/IX для рентгенологии</h3>
-                <p class="mb-4">Компания ITco представляет совершенно новую и полностью унифицированную ИТ-платформу
-                  AP/IX
-                  для обработки
-                  изображений. Все соответствующие компоненты, включая системы архивации и передачи изображений (PACS),
-                  отчеты и распознавание речи, интерфейсы, передовые клинические приложения для обработки изображений,
-                  веб-просмотр с клиентом не требующим установки, виртуальные сети VNA, RIS и инструменты
-                  бизнес-аналитики,
-                  построены на этой платформе.
-                </p>
-<!--                <p><strong>Некоторые основные моменты AP/IX для рентгенологии:</strong></p>-->
-<!--                <ul>-->
-<!--                  <li>Единая платформа, единая база данных;</li>-->
-<!--                  <li>Последовательный и интуитивно понятный пользовательский интерфейс на всех рабочих столах и-->
-<!--                    средствах-->
-<!--                    просмотра;-->
-<!--                  </li>-->
-<!--                  <li>Гибкие формы отображения протоколов и полностью встроенные клинические инструменты;</li>-->
-<!--                  <li>Полностью настраиваемый рабочий процесс на основе задач;</li>-->
-<!--                  <li>Единая структура совместной работы на всей платформе;</li>-->
-<!--                  <li>Секционная отчетность, включая ключевые изображения и измерения;</li>-->
-<!--                  <li>Мощный клинический интерфейс просмотра (XERO).</li>-->
-<!--                </ul>-->
-              </div>
-              <img src="assets/img/dir-05.png" alt=">Платформа веб-визуализации AP/IX для рентгенологии"
-                   class="direction__img">
+            <div class="demo__heading">
+              <p class="demo__caption">Записаться на демонстрацию продукта</p>
+              <p class="demo__subcaption">В подарок: презентация о системе <span>AP/IX</span></p>
             </div>
-            <div class="direction__content tabs__content" data-target="two">
-              <div class="direction__text">
-                <h3 class="direction__title">Кардиология</h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci
-                  architecto asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus
-                  nesciunt nostrum quidem quos rerum, voluptate?
-                </p>
-
-              </div>
-              <img src="assets/img/dir-05.png" alt=">Платформа веб-визуализации AP/IX для рентгенологии"
-                   class="direction__img">
-            </div>
-            <div class="direction__content tabs__content" data-target="three">
-              <div class="direction__text">
-                <h3 class="direction__title">Онкология</h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci
-                  architecto asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus
-                  nesciunt nostrum quidem quos rerum, voluptate?
-                </p>
-
-              </div>
-              <img src="assets/img/dir-05.png" alt=">Платформа веб-визуализации AP/IX для рентгенологии"
-                   class="direction__img">
-            </div>
-            <div class="direction__content tabs__content" data-target="four">
-              <div class="direction__text">
-                <h3 class="direction__title">Радиоизотопная диагностика</h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci
-                  architecto asperiores aut doloribus eaque enim et eveniet illo in inventore libero magnam natus
-                  nesciunt nostrum quidem quos rerum, voluptate?
-                </p>
-
-              </div>
-              <img src="assets/img/dir-05.png" alt=">Платформа веб-визуализации AP/IX для рентгенологии"
-                   class="direction__img">
-            </div>
-          </div>
-        </div>
-      </div>
-    <section class="demo ">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="flex demo__flex">
-              <svg class="demo__icon">
-                <use xlink:href="assets/img/sprite.svg#demo-icon"></use>
-              </svg>
-              <div class="demo__heading">
-                <p class="demo__caption">Записаться на демонстрацию продукта</p>
-                <p class="demo__subcaption">В подарок: презентация о системе <span>AP/IX</span></p>
-              </div>
-              <form action="" class="demo__form flex">
-                <input type="tel" class="demo__input phone-mask" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
-                <div class="demo__agreement checkbox flex">
-                  <label for="conf2" class="checkbox__label">
-                    <input type="checkbox" name="conf" id="conf2" class="checkbox__input js-demo-checkbox">
-                    <span class="checkbox__pane"></span>
-                    Я согласен(а) на <a href="">обработку <br class="only-desktop">
-                    персональных данных</a>
-                  </label>
-                </div>
-                <button class="btn-reset demo__submit js-demo-submit" disabled>Записаться</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    </section>
-
-  <!--Service-->
-  <section class="service section" id="" data-anchor="service">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-h2 service__title">Услуги</h2>
-        </div>
-      </div>
-      <div class="row position-relative">
-        <div class="col-lg-10 offset-lg-1 swiper service-slider">
-          <ul class="service__list swiper-wrapper">
-            <li class="service__item swiper-slide">
-              <p class="service__caption">Поставка и внедрение
-                комплексных PACS+RIS систем</p>
-              <p class="service__description">Интеграция клинических приложений с PACS/VBC и прочими системами.
-                Сервисное
-                обслуживание</p>
-              <button class="btn-reset service__btn" data-fancybox data-src="#popup">Подробности</button>
-            </li>
-            <li class="service__item swiper-slide">
-              <p class="service__caption">Поставка медицинских систем визуализации</p>
-              <p class="service__description">В том числе помощь в подборе
-                подходящей продукции и введение
-                в эксплуатацию</p>
-              <button class="btn-reset service__btn" data-fancybox data-src="#popup">Подробности</button>
-            </li>
-            <li class="service__item swiper-slide">
-              <p class="service__caption">Интегрированные гибридные операционные</p>
-              <p class="service__description">Отображение видео со всех
-                источников в операционной,
-                на дисплее перед хирургом,
-                а так же сохранение видео хода операций и не только в PACS</p>
-              <button class="btn-reset service__btn" data-fancybox data-src="#popup">Подробности</button>
-            </li>
-          </ul>
-        </div>
-        <div class="slider-navigation slider-navigation_left service__nav service__nav-next">
-          <svg>
-            <use xlink:href="assets/img/sprite.svg#nav-left"></use>
-          </svg>
-        </div>
-        <div class="slider-navigation slider-navigation_right service__nav service__nav-prev">
-          <svg>
-            <use xlink:href="assets/img/sprite.svg#nav-right"></use>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--steps-->
-  <section class="steps section" id="" data-anchor="steps">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-h2 steps__title">Этапы подключения AP/IX</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <ul class="steps__list">
-            <li class="steps__item">
-              <div class="steps__number">1</div>
-              <svg>
-                <use xlink:href="assets/img/sprite.svg#step-icon"></use>
-              </svg>
-              <p class="steps__caption">Оставьте заявку <br>на сайте</p>
-            </li>
-            <li class="steps__item">
-              <div class="steps__number">2</div>
-              <svg>
-                <use xlink:href="assets/img/sprite.svg#step-icon"></use>
-              </svg>
-              <p class="steps__caption">Мы направим Вам <br> опросник для заполнения</p>
-            </li>
-            <li class="steps__item">
-              <div class="steps__number">3</div>
-              <svg>
-                <use xlink:href="assets/img/sprite.svg#step-icon"></use>
-              </svg>
-              <p class="steps__caption">Специалисты подберут <br>для Вас решение</p>
-            </li>
-            <li class="steps__item">
-              <div class="steps__number">4</div>
-              <svg>
-                <use xlink:href="assets/img/sprite.svg#step-icon"></use>
-              </svg>
-              <p class="steps__caption">Согласование <br>и подписание договора</p>
-            </li>
-            <li class="steps__item">
-              <div class="steps__number">5</div>
-              <svg>
-                <use xlink:href="assets/img/sprite.svg#step-icon"></use>
-              </svg>
-              <p class="steps__caption">Подготовка и внедрение <br>системы в медучереждение</p>
-            </li>
-            <li class="steps__item">
-              <div class="steps__number">6</div>
-              <svg>
-                <use xlink:href="assets/img/sprite.svg#step-icon"></use>
-              </svg>
-              <p class="steps__caption">Обучение специалистов <br>работе в системе</p>
-            </li>
-            <li class="steps__item">
-              <div class="steps__number">7</div>
-              <svg>
-                <use xlink:href="assets/img/sprite.svg#step-icon-red"></use>
-              </svg>
-              <p class="steps__caption">Ваше лечебное учреждениям <br>интегрированно с PACS</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="projects section" id="" data-anchor="projects">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-h2">Наши проекты</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 projects-slider swiper">
-          <ul class="projects__list swiper-wrapper">
-            <li class="projects__item swiper-slide"><img src="assets/img/pr-01.png" alt="" class="projects__logo">
-              <p class="projects__caption">SaaS для частных медцентров</p>
-              <div class="projects__description"><p>Медскан – сеть диагностических центров (4 центра) экспертного класса
-                и
-                онкологический центр</p>
-              </div>
-              <button class="btn-reset projects__btn">Подробности</button>
-            </li>
-            <li class="projects__item swiper-slide"><img src="assets/img/pr-02.png" alt="" class="projects__logo">
-              <p class="projects__caption">Поддержка и расширение имеющихся систем</p>
-              <div class="projects__description">
-                <p>Поставка программно - аппаратного комплекса для получения, обработки, архивирования
-                  и передачи медицинских изображений и данных на единой программной платформе c имеющейся в ФБУЗ
-                  Лечебно-реабилитационный центр Минэкономразвития России</p>
-              </div>
-              <button class="btn-reset projects__btn">Подробности</button>
-            </li>
-            <li class="projects__item swiper-slide"><img src="assets/img/pr-03.png" alt="" class="projects__logo">
-              <p class="projects__caption">Телерадиология и распределенный рабочий процесс</p>
-              <div class="projects__description"><p>Компания «ИНВИТРО» была основана в Москве в ноябре 1998. ИНВИТРО -
-                крупнейшая частная медицинская компания в России, специализирующаяся на высокоточной лабораторной
-                диагностике. </p>
-                <p>Основная цель реализованного проекта дать возможность врачам в г. Москва анализировать и описывать
-                  исследования , выполненный в филиалах</p>
-              </div>
-              <button class="btn-reset projects__btn">Подробности</button>
-            </li>
-          </ul>
-          <div class="slider-navigation slider-navigation_left projects__nav projects__nav-next">
-            <svg>
-              <use xlink:href="assets/img/sprite.svg#nav-left"></use>
-            </svg>
-          </div>
-          <div class="slider-navigation slider-navigation_right projects__nav projects__nav-prev">
-            <svg>
-              <use xlink:href="assets/img/sprite.svg#nav-right"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- numbers -->
-  <section class="numbers section" id="" data-anchor="numbers">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-h2">Немного цифр про нас</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <ul class="numbers__list">
-            <li class="numbers__item">
-              <div class="numbers__top">
-                <p class="numbers__caption">Системой <br>
-                  пользуются</p>
-                <p class="numbers__value">550</p>
-              </div>
-              <p class="numbers__bottom">ваших коллег</p>
-            </li>
-            <li class="numbers__item">
-              <div class="numbers__top">
-                <p class="numbers__caption">В базе <br>
-                  хранится</p>
-                <p class="numbers__value">1 млн</p>
-              </div>
-              <p class="numbers__bottom">исследований <br>
-                в системе</p>
-            </li>
-            <li class="numbers__item">
-              <div class="numbers__top">
-                <p class="numbers__caption">Статистика <br>
-                  ЕРИС</p>
-                <p class="numbers__value">15</p>
-              </div>
-              <p class="numbers__bottom">лет сборки данных</p>
-            </li>
-            <li class="numbers__item">
-              <div class="numbers__top">
-                <p class="numbers__caption">По всей <br>
-                  стране</p>
-                <p class="numbers__value">75</p>
-              </div>
-              <p class="numbers__bottom">медицинских организаций <br> подключено</p>
-            </li>
-            <li class="numbers__item">
-              <div class="numbers__top">
-                <p class="numbers__caption">В системе</p>
-                <p class="numbers__value">146</p>
-              </div>
-              <p class="numbers__bottom">диагностических <br> устройств</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--honors-->
-  <section class="honors section" id=""  data-anchor="honors">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-h2">Наши награды</h2>
-        </div>
-      </div>
-      <div class="row position-relative">
-        <div class="col-12 swiper honors-slider">
-          <ul class="honors__list swiper-wrapper">
-            <li class="honors__item swiper-slide">
-              <div>
-                <div class="honors__heading">
-                  <p class="honors__caption">Лучшая <br>система</p>
-                  <p class="honors__year">2020</p>
-                </div>
-                <p class="honors__span">года</p>
-              </div>
-              <img src="assets/img/honnor-img.png" alt="" class="honors__img">
-            </li>
-            <li class="honors__item swiper-slide">
-              <div>
-                <div class="honors__heading">
-                  <p class="honors__caption">Лучшая <br>система</p>
-                  <p class="honors__year">2021</p>
-                </div>
-                <p class="honors__span">года</p>
-              </div>
-              <img src="assets/img/honnor-img.png" alt="" class="honors__img">
-            </li>
-            <li class="honors__item swiper-slide">
-              <div>
-                <div class="honors__heading">
-                  <p class="honors__caption">Лучшая <br>система</p>
-                  <p class="honors__year">2022</p>
-                </div>
-                <p class="honors__span">года</p>
-              </div>
-              <img src="assets/img/honnor-img.png" alt="" class="honors__img">
-            </li>
-            <li class="honors__item swiper-slide">
-              <div>
-                <div class="honors__heading">
-                  <p class="honors__caption">Лучшая <br>система</p>
-                  <p class="honors__year">2022</p>
-                </div>
-                <p class="honors__span">года</p>
-              </div>
-              <img src="assets/img/honnor-img.png" alt="" class="honors__img">
-            </li>
-            <li class="honors__item swiper-slide">
-              <div>
-                <div class="honors__heading">
-                  <p class="honors__caption">Лучшая <br>система</p>
-                  <p class="honors__year">2022</p>
-                </div>
-                <p class="honors__span">года</p>
-              </div>
-              <img src="assets/img/honnor-img.png" alt="" class="honors__img">
-            </li>
-          </ul>
-        </div>
-        <div class="slider-navigation slider-navigation_left honors__nav honors__nav-next">
-          <svg>
-            <use xlink:href="assets/img/sprite.svg#nav-left"></use>
-          </svg>
-        </div>
-        <div class="slider-navigation slider-navigation_right honors__nav honors__nav-prev">
-          <svg>
-            <use xlink:href="assets/img/sprite.svg#nav-right"></use>
-          </svg>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--  reviews-->
-  <section class="reviews section main-bottom"  id="" data-anchor="reviews">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-h2 reviews__title">Отзывы ведущих специалистов</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col--lg-10 offset-xl-1">
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <div class="reviews__heading"><img src="assets/img/rev-01.png" alt="" class="reviews__photo">
-                <div class="reviews__info">
-                  <p class="reviews__name">Кевин Смит</p>
-                  <p class="reviews__profession">кардиолог</p>
-                  <p class="reviews__experience">стаж работы 9 лет</p>
-                </div>
-              </div>
-              <div class="reviews__content">
-                "Спасибо за отличный сервис! ValuationPro - действительно одна из самых профессиональных компаний по
-                оценке недвижимости, с которой мы когда-либо работали. Все члены их команды хорошо обучены и
-                сертифицированы. Начиная с первого телефонного звонка, их оценщик был знающим, искренним и чрезвычайно
-                полезным.
-              </div>
-            </li>
-            <li class="reviews__item">
-              <div class="reviews__heading"><img src="assets/img/rev-02.png" alt="" class="reviews__photo">
-                <div class="reviews__info">
-                  <p class="reviews__name">Нерджи Абхала</p>
-                  <p class="reviews__profession">Флеболог</p>
-                  <p class="reviews__experience">стаж работы 17 лет</p>
-                </div>
-              </div>
-              <div class="reviews__content">
-                «Оценка была справедливой и удовлетворительной для всех членов нашей семьи. Это помогло нам продать нашу
-                давнюю недвижимость по лучшей цене. Очень рекомендую Адама и компанию ValuationPro. Они были чрезвычайно
-                профессиональны, дружелюбны и честны. Большое спасибо за отличную работу!
-              </div>
-            </li>
-            <li class="reviews__item">
-              <div class="reviews__heading"><img src="assets/img/rev-03.png" alt="" class="reviews__photo">
-                <div class="reviews__info">
-                  <p class="reviews__name">Лори Гувер</p>
-                  <p class="reviews__profession">Мамолог</p>
-                  <p class="reviews__experience">стаж работы 14 лет</p>
-                </div>
-              </div>
-              <div class="reviews__content">
-                «Очень порадовали надежность, быстрота реакции, оперативность и исключительное качество обслуживания
-                клиентов. Если я встречу кого-то, кому нужна профессиональная услуга по оценке жилья, то, несомненно,
-                очень рекомендую обратиться в вашу контору. Спасибо за отличную работу!"
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--  about -->
-  <section class="about section main-bottom" id="" data-anchor="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-h2 about__title">О компании</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <svg>
-            <use xlink:href="assets/img/sprite.svg#logo"></use>
-          </svg>
-          <div class="about__info">
-            <span>AP/IX</span> - разработка компании ITco (Айтико). Мы предлагаем полный спектр
-            IT-решений, которые помогают лечебным учреждениям наладить хранение
-            и беспрепятственный обмен информацией при обслуживании пациентов.
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
-          <form action="" class="hero__form hero-form about__form">
-            <div class="hero-form__heading about__heading">Остались вопросы?</div>
-            <div class="about__body">
-              <p class="hero-form__caption">Закажите звонок!</p>
-              <label for="name" class="hero-form__label">
-                <input type="text" id="name" name="name" class="hero-form__input"
-                       placeholder="Имя*" required>
-              </label>
-              <label for="hero-phone2" class="hero-form__label">
-                <input type="tel" id="hero-phone2" name="hero-phone" class="hero-form__input phone-mask"
-                       placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
-              </label>
-              <div class="hero-form__conf checkbox flex about__checkbox">
-                <label for="conf3" class="checkbox__label">
-                  <input type="checkbox" name="conf3" id="conf3" class="checkbox__input  js-about-checkbox" checked>
+            <form action="" class="demo__form flex">
+              <input type="tel" class="demo__input phone-mask" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+              <div class="demo__agreement checkbox flex">
+                <label for="conf2" class="checkbox__label">
+                  <input type="checkbox" name="conf" id="conf2" class="checkbox__input js-demo-checkbox">
                   <span class="checkbox__pane"></span>
-                  Я согласен(а) на <a href="/">обработку персональных данных</a>
+                  Я согласен(а) на <a href="">обработку <br class="only-desktop">
+                  персональных данных</a>
                 </label>
               </div>
-              <button class="btn-reset hero-form__submit about__submit js-about-submit">Заказать звонок
-              </button>
-            </div>
-          </form>
+              <button class="btn-reset demo__submit js-demo-submit" disabled>Записаться</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
+</section>
+
+<!--Service-->
+<section class="service section" data-anchor="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-h2 service__title">Услуги</h2>
+      </div>
+    </div>
+    <div class="row position-relative">
+      <div class="col-12 swiper service-slider">
+        <ul class="service__list swiper-wrapper">
+          <li class="service__item swiper-slide">
+            <p class="service__caption">Поставка и внедрение
+              комплексных PACS+RIS систем</p>
+            <p class="service__description">Интеграция клинических приложений с PACS/VBC и прочими системами.
+              Сервисное
+              обслуживание</p>
+            <button class="btn-reset service__btn" data-fancybox data-src="#popup">Подробности</button>
+          </li>
+          <li class="service__item swiper-slide">
+            <p class="service__caption">Поставка медицинских систем визуализации</p>
+            <p class="service__description">В том числе помощь в подборе
+              подходящей продукции и введение
+              в эксплуатацию</p>
+            <button class="btn-reset service__btn" data-fancybox data-src="#popup">Подробности</button>
+          </li>
+          <li class="service__item swiper-slide">
+            <p class="service__caption">Интегрированные гибридные операционные</p>
+            <p class="service__description">Отображение видео со всех
+              источников в операционной,
+              на дисплее перед хирургом,
+              а так же сохранение видео хода операций и не только в PACS</p>
+            <button class="btn-reset service__btn" data-fancybox data-src="#popup">Подробности</button>
+          </li>
+          <li class="service__item swiper-slide">
+            <p class="service__caption">Подключение облачного сервера</p>
+            <p class="service__description">PACS, работающий на облачных серверах, надёжное, современное и удобное в
+              использовании решение вопроса хранения и просмотра DICOM изображений</p>
+            <button class="btn-reset service__btn" data-fancybox data-src="#popup">Подробности</button>
+          </li>
+        </ul>
+      </div>
+      <div class="slider-navigation slider-navigation_left service__nav service__nav-next">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+        </svg>
+      </div>
+      <div class="slider-navigation slider-navigation_right service__nav service__nav-prev">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--steps-->
+<section class="steps section" data-anchor="steps">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-h2 steps__title">Этапы подключения AP/IX</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ul class="steps__list">
+          <li class="steps__item">
+            <div class="steps__number">1</div>
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#step-icon"></use>
+            </svg>
+            <p class="steps__caption">Оставьте заявку <br>на сайте</p>
+          </li>
+          <li class="steps__item">
+            <div class="steps__number">2</div>
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#step-icon"></use>
+            </svg>
+            <p class="steps__caption">Мы направим Вам <br> опросник для заполнения</p>
+          </li>
+          <li class="steps__item">
+            <div class="steps__number">3</div>
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#step-icon"></use>
+            </svg>
+            <p class="steps__caption">Специалисты подберут <br>для Вас решение</p>
+          </li>
+          <li class="steps__item">
+            <div class="steps__number">4</div>
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#step-icon"></use>
+            </svg>
+            <p class="steps__caption">Согласование <br>и подписание договора</p>
+          </li>
+          <li class="steps__item">
+            <div class="steps__number">5</div>
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#step-icon"></use>
+            </svg>
+            <p class="steps__caption">Подготовка и внедрение <br>системы в медучереждение</p>
+          </li>
+          <li class="steps__item">
+            <div class="steps__number">6</div>
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#step-icon"></use>
+            </svg>
+            <p class="steps__caption">Обучение специалистов <br>работе в системе</p>
+          </li>
+          <li class="steps__item">
+            <div class="steps__number">7</div>
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#step-icon-red"></use>
+            </svg>
+            <p class="steps__caption">Ваше лечебное учреждениям <br>интегрированно с PACS</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="projects section" data-anchor="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-h2">Наши проекты</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 projects-slider swiper">
+        <ul class="projects__list swiper-wrapper">
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-01.png" alt="" class="projects__logo">
+            <p class="projects__caption">SaaS для частных медцентров</p>
+            <div class="projects__description"><p>Медскан – сеть диагностических центров (4 центра) экспертного класса
+              и
+              онкологический центр</p>
+            </div>
+            <a href="https://evgsbel.github.io/itco/dist/medscan.html" class="btn-reset projects__btn">Подробности</a>
+          </li>
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-02.png" alt="" class="projects__logo">
+            <p class="projects__caption">Поддержка и расширение имеющихся систем</p>
+            <div class="projects__description">
+              <p>Поставка программно - аппаратного комплекса для получения, обработки, архивирования
+                и передачи медицинских изображений и данных на единой программной платформе c имеющейся в ФБУЗ
+                Лечебно-реабилитационный центр Минэкономразвития России</p>
+            </div>
+            <a href="https://evgsbel.github.io/itco/dist/minec.html" class="btn-reset projects__btn">Подробности</a>
+          </li>
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-03.png" alt="" class="projects__logo">
+            <p class="projects__caption">Телерадиология и распределенный рабочий процесс</p>
+            <div class="projects__description"><p>Компания «ИНВИТРО» была основана в Москве в ноябре 1998. ИНВИТРО -
+              крупнейшая частная медицинская компания в России, специализирующаяся на высокоточной лабораторной
+              диагностике. </p>
+              <p>Основная цель реализованного проекта дать возможность врачам в г. Москва анализировать и описывать
+                исследования , выполненный в филиалах</p>
+            </div>
+            <a href="https://evgsbel.github.io/itco/dist/invitro.html" class="btn-reset projects__btn">Подробности</a>
+          </li>
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-04.png" alt="" class="projects__logo">
+            <p class="projects__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="projects__description">
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+            </div>
+            <a href="https://evgsbel.github.io/itco/dist/gazprom.html" class="btn-reset projects__btn">Подробности</a>
+          </li>
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-05.png" alt="" class="projects__logo">
+            <p class="projects__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="projects__description">
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+            </div>
+            <a href="https://evgsbel.github.io/itco/dist/eris.html" class="btn-reset projects__btn">Подробности</a>
+          </li>
+          <li class="projects__item swiper-slide"><img src="assets/img/pr-06.png" alt="" class="projects__logo">
+            <p class="projects__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="projects__description">
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+              <p>Ab fugiat nam sunt tempore? Aspernatur exercitationem impedit obcaecati quae sint sit. Architecto</p>
+            </div>
+            <a href="https://evgsbel.github.io/itco/dist/gkb52.html" class="btn-reset projects__btn">Подробности</a>
+          </li>
+        </ul>
+        <div class="slider-navigation slider-navigation_left projects__nav projects__nav-next">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+          </svg>
+        </div>
+        <div class="slider-navigation slider-navigation_right projects__nav projects__nav-prev">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- numbers -->
+<section class="numbers section" data-anchor="numbers">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-h2">Немного цифр про нас</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ul class="numbers__list">
+          <li class="numbers__item">
+            <div class="numbers__top">
+              <p class="numbers__caption">Системой <br>
+                пользуются</p>
+              <p class="numbers__value">550</p>
+            </div>
+            <p class="numbers__bottom">ваших коллег</p>
+          </li>
+          <li class="numbers__item">
+            <div class="numbers__top">
+              <p class="numbers__caption">В базе <br>
+                хранится</p>
+              <p class="numbers__value">1 млн</p>
+            </div>
+            <p class="numbers__bottom">исследований <br>
+              в системе</p>
+          </li>
+          <li class="numbers__item">
+            <div class="numbers__top">
+              <p class="numbers__caption">Статистика <br>
+                ЕРИС</p>
+              <p class="numbers__value">15</p>
+            </div>
+            <p class="numbers__bottom">лет сборки данных</p>
+          </li>
+          <li class="numbers__item">
+            <div class="numbers__top">
+              <p class="numbers__caption">По всей <br>
+                стране</p>
+              <p class="numbers__value">75</p>
+            </div>
+            <p class="numbers__bottom">медицинских организаций <br> подключено</p>
+          </li>
+          <li class="numbers__item">
+            <div class="numbers__top">
+              <p class="numbers__caption">В системе</p>
+              <p class="numbers__value">146</p>
+            </div>
+            <p class="numbers__bottom">диагностических <br> устройств</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--honors-->
+<section class="honors section" data-anchor="honors">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-h2">Наши награды</h2>
+      </div>
+    </div>
+    <div class="row position-relative">
+      <div class="col-12 swiper honors-slider">
+        <ul class="honors__list swiper-wrapper">
+          <li class="honors__item swiper-slide">
+            <div>
+              <div class="honors__heading">
+                <p class="honors__caption">Лучшая <br>система</p>
+                <p class="honors__year">2020</p>
+              </div>
+              <p class="honors__span">года</p>
+            </div>
+            <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+          </li>
+          <li class="honors__item swiper-slide">
+            <div>
+              <div class="honors__heading">
+                <p class="honors__caption">Лучшая <br>система</p>
+                <p class="honors__year">2021</p>
+              </div>
+              <p class="honors__span">года</p>
+            </div>
+            <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+          </li>
+          <li class="honors__item swiper-slide">
+            <div>
+              <div class="honors__heading">
+                <p class="honors__caption">Лучшая <br>система</p>
+                <p class="honors__year">2022</p>
+              </div>
+              <p class="honors__span">года</p>
+            </div>
+            <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+          </li>
+          <li class="honors__item swiper-slide">
+            <div>
+              <div class="honors__heading">
+                <p class="honors__caption">Лучшая <br>система</p>
+                <p class="honors__year">2022</p>
+              </div>
+              <p class="honors__span">года</p>
+            </div>
+            <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+          </li>
+          <li class="honors__item swiper-slide">
+            <div>
+              <div class="honors__heading">
+                <p class="honors__caption">Лучшая <br>система</p>
+                <p class="honors__year">2022</p>
+              </div>
+              <p class="honors__span">года</p>
+            </div>
+            <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+          </li>
+        </ul>
+      </div>
+      <div class="slider-navigation slider-navigation_left honors__nav honors__nav-next">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+        </svg>
+      </div>
+      <div class="slider-navigation slider-navigation_right honors__nav honors__nav-prev">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--  reviews-->
+<section class="reviews section main-bottom" data-anchor="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-h2 reviews__title">Отзывы ведущих специалистов</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col--lg-10 offset-xl-1">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__heading"><img src="assets/img/rev-01.png" alt="" class="reviews__photo">
+              <div class="reviews__info">
+                <p class="reviews__name">Кевин Смит</p>
+                <p class="reviews__profession">кардиолог</p>
+                <p class="reviews__experience">стаж работы 9 лет</p>
+              </div>
+            </div>
+            <div class="reviews__content">
+              "Спасибо за отличный сервис! ValuationPro - действительно одна из самых профессиональных компаний по
+              оценке недвижимости, с которой мы когда-либо работали. Все члены их команды хорошо обучены и
+              сертифицированы. Начиная с первого телефонного звонка, их оценщик был знающим, искренним и чрезвычайно
+              полезным.
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__heading"><img src="assets/img/rev-02.png" alt="" class="reviews__photo">
+              <div class="reviews__info">
+                <p class="reviews__name">Нерджи Абхала</p>
+                <p class="reviews__profession">Флеболог</p>
+                <p class="reviews__experience">стаж работы 17 лет</p>
+              </div>
+            </div>
+            <div class="reviews__content">
+              «Оценка была справедливой и удовлетворительной для всех членов нашей семьи. Это помогло нам продать нашу
+              давнюю недвижимость по лучшей цене. Очень рекомендую Адама и компанию ValuationPro. Они были чрезвычайно
+              профессиональны, дружелюбны и честны. Большое спасибо за отличную работу!
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__heading"><img src="assets/img/rev-03.png" alt="" class="reviews__photo">
+              <div class="reviews__info">
+                <p class="reviews__name">Лори Гувер</p>
+                <p class="reviews__profession">Мамолог</p>
+                <p class="reviews__experience">стаж работы 14 лет</p>
+              </div>
+            </div>
+            <div class="reviews__content">
+              «Очень порадовали надежность, быстрота реакции, оперативность и исключительное качество обслуживания
+              клиентов. Если я встречу кого-то, кому нужна профессиональная услуга по оценке жилья, то, несомненно,
+              очень рекомендую обратиться в вашу контору. Спасибо за отличную работу!"
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  about -->
+{{> about}}
 
